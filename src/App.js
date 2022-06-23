@@ -7,6 +7,7 @@ import {
 import ContactUs from "./Pages/ContactUs";
 import NotFound from "./Pages/NotFound";
 import Home from "./Pages/Home";
+import "./style.css"
 export default function App(){
   return(
     <div>
