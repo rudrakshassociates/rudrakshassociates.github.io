@@ -38,6 +38,11 @@
     display: flex;
     gap: 2rem;
 }
+.navbar-link{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
 .socials{
     font-size: 20px;
     font-weight: 600;
@@ -45,7 +50,7 @@
     display: flex;
     gap: 1rem;
 }
-.links>li:hover{
+.navbar-link:hover{
     color: lightgray;
 }
 .socials>li:hover{

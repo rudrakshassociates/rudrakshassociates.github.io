@@ -8,11 +8,11 @@ export default function Navbar(){
                 <h1><Link to="/" className="home-link">Rudraksh Associates</Link></h1>
                 <div className="Navbar-list">
                     <ul className="links">
-                        <li>Our Services</li>
-                        <li>Projects</li>
-                        <li>Gallery</li>
-                        <li>FAQ</li>
-                        <li>Contact Us</li>
+                        <li><Link to="/services" className="navbar-link">Our Services</Link></li>
+                        <li><Link to="/projects" className="navbar-link">Projects</Link></li>
+                        <li><Link to="/gallery" className="navbar-link">Gallery</Link></li>
+                        <li><Link to="/faq" className="navbar-link">FAQ</Link></li>
+                        <li><Link to="/contactus" className="navbar-link">Contact Us</Link></li>
                     </ul>
                     <ul className="socials">
                         <li>in</li>
