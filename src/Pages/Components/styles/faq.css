@@ -1,0 +1,47 @@
+.FAQ-Theme{
+    display: flex;
+    gap: 20%;
+    margin: 3% 0%;
+}
+.FAQ-Content{
+    font-size: 25px;
+    margin: 0.2% 20%;
+    margin-bottom: 0.2%;
+    padding: 1% 5%;
+    width: 50%;
+    border-radius: 25px;
+    background-color: #ffffff;
+}
+.Theme-para{
+    width: 30%;
+}
+.Theme-para>p{
+    font-size: 18px;
+}
+.card-para{
+    font-size: 15px;
+    width:50%;
+}
+.FAQ-Header>img{
+    width: 50%;
+    border-radius: 15px;
+    margin: 5% 25%;
+}
+.FAQ-Header{
+    background-color:#CA85F0;
+}
+.Header-title{
+    position: absolute;
+    left:37%;
+    top: 42%;
+    color: #ffffff;
+}
+.Header-title>h1{
+    font-size: 100px;
+    margin-left: 35%;
+    margin-bottom: 0%;
+}
+.Header-title>h2{
+    font-size: 40px;
+    margin-top:0% ;
+}

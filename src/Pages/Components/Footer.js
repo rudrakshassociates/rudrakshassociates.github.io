@@ -13,6 +13,7 @@ export default function Footer(){
                         <div className="Link-block">
                             <ul>
                                 <h3>Our Services</h3>
+                                <hr></hr>
                                 <li>Lorem ipsum</li>
                                 <li>Lorem ipsum</li>
                                 <li>Lorem ipsum</li>
@@ -23,6 +24,7 @@ export default function Footer(){
                         <div className="Link-block">
                             <ul>
                                 <h3>About</h3>
+                                <hr></hr>
                                 <h2>Wanna work with us?</h2>
                                 <button id="number">+91 9875416358</button>
                                 <button id="contact">Get in Touch</button>
@@ -32,6 +34,7 @@ export default function Footer(){
                         <div className="Link-block">
                             <ul>
                                 <h3>Projects</h3>
+                                <hr></hr>
                                 <li>Lorem ipsum</li>
                                 <li>Lorem ipsum</li>
                                 <li>Lorem ipsum</li>
