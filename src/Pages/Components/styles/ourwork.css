@@ -1,0 +1,21 @@
+.Work-Header{
+    background-color: #430082;
+    margin: 2% 0%;
+    padding: 2% 1%;
+    color: white;
+}
+.Work-Head-Content>h1{
+    
+    font-size: 90px;
+    width: 10%;
+}
+.Work-Head-Content{
+    margin: 0% 8%;
+}
+.Work-Head-Content>h3{
+    position: absolute;
+    left:80%;
+    top:30%;
+    font-size: 25px;
+    font-weight: 400;
+}

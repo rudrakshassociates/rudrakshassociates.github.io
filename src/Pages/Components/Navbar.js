@@ -9,9 +9,9 @@ export default function Navbar(){
                 <div className="Navbar-list">
                     <ul className="links">
                         <li><Link to="/services" className="navbar-link">Our Services</Link></li>
-                        <li><Link to="/projects" className="navbar-link">Projects</Link></li>
+                        <li><Link to="/projects" className="navbar-link">Our Work</Link></li>
                         <li><Link to="/gallery" className="navbar-link">Gallery</Link></li>
-                        <li><Link to="/faq" className="navbar-link">FAQ</Link></li>
+                        <li><Link to="/faq" className="navbar-link">About Us</Link></li>
                         <li><Link to="/contactus" className="navbar-link">Contact Us</Link></li>
                     </ul>
                     <ul className="socials">
