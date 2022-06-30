@@ -5,7 +5,10 @@ export default function Footer(){
     return (
         <div>
            <div className="Footer-Container">
+            {/* <h1><Link to="/" className="Footer-home-link">Rudraksh Associates</Link></h1> */}
+
                 <div className="Footer-Tagline">
+                    
                     <h1>TagLine-Text tagline-text</h1>
                 </div>
                 <div className="Footer-flex-Content">
@@ -53,7 +56,6 @@ export default function Footer(){
                             <li>FAQ</li>
                             <li>Contact Us</li>
                         </ul>
-                        <h1><Link to="/" className="Footer-home-link">Rudraksh Associates</Link></h1>
                     </div>
                     
                 </div>

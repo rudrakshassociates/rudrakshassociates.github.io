@@ -5,7 +5,9 @@ export default function News(){
     return (
         <div>
            <div className="News-Container">
-                <div className="News-Head">Latest Happening!</div>
+                <div className="News-Head">
+                    <h1>LATEST HAPPENING!</h1>
+                </div>
                 <div>
                     <div className="Map"></div>
                     <div className="Slider-down">
