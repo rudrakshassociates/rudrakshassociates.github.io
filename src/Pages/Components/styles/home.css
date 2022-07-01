@@ -1,37 +1,61 @@
+.main-body{
+    position: fixed;
+    z-index:10;
+}
 .Home-bg{
-    background-color: #430082;
-    margin-top: 4%;
+    background-color: #4D3D54;
+    /* margin-top: 6%; */
     width: 100%;
-    height: 1024px
+    height: 1200px;
+    overflow: hidden;
 }
 .Home-bg>img{
-    object-fit:cover;
-    opacity: 0.7;
-    /* margin: 0% 10%; */
-    overflow: hidden;
-    width: 100%;
-    /* background: rgba(0,255,255, 0.5); */
+    opacity: 0.6;
+    margin: 0% -30%;
+    width: 250%;
+}
+.Title{
+    letter-spacing: 1px;
+    color: white;
+    margin-top: 25%;
+    text-align: center;
 }
 .Title>h1{
-    width: 10%;
-    position: absolute;
+    line-height: 5px;
     font-weight: bold;
+    color: #F7D05A;
+    margin-left: 1.5%;
+    font-size: 32px;
+}
+.buttons{
+    margin-top: 10%;
+    justify-content: center;
+    display: flex;
+    gap: 10%;
+}.Title>h2{
+    font-size: 22px;
+}
+.Title-info{
+    margin-top: 10%;
+    text-align: center;
     color: white;
-    font-size: 90px;
-    /* padding-top: 15%; */
-    top: 35%;
-    left: 15%;
+}
+.Title-info>h1{
+    font-weight: bold;
+    font-size: 30px;
+}
+.Title-info>p{
+    margin-left:10%;
+    width: 80%;
+    font-size: 18px;
 }
 .GetinTouch{
-    position: absolute;
-    left: 70%;
-    top: 70%;
     color: white;
     font-weight: 600;
-    border: 10px solid #6400C2;
+    border: 10px solid #FB6F77;
     border-radius: 10px;
-    font-size: 20px;
-    background-color: #6400C2;
+    font-size: 18px;
+    background-color: #FB6F77;
 }
 .GetinTouch:hover{
     color: #6400C2;
@@ -39,21 +63,32 @@
     border-color: white;
 }
 .our-services{
+    position: absolute;
+    width: 80%;
+    top: 100%;
+    height: 800px;
     border-radius: 5px;
-    color: white;
-    background-color: #430082;
-
+    color: #4D3D54;
+    background-color: white;
     padding: 5% 6%;
-    display: flex;
-    gap: 10%;
 }
-.service-info{
-    width: 30%;
+.service-container{
+    height: 800px;
+    width: 90%;
+    padding: 1% 5%;
+    background-color: #F7D05A;
 }
 .service-info>p{
     font-size: 20px;
 }
-
+.service-info>hr{
+    border: 1.5px solid #FB6F77;
+    background-color: #FB6F77;
+    width: 15%;
+}
+.service-info{
+    text-align: center;
+}
 .Info-para{
     font-size: 20px;
 }
@@ -72,34 +107,11 @@
 .CEO-Info>h3{font-size: 25px;}
 .designation{font-weight: 400;}
 
-.Gallery-Container{
-    background-color: #430082;
-    color: white;
-    border-radius: 5px;
-    padding: 5%;
-}
-.Gallery-Head{
-    align-items: center;
-    display: flex;
-    gap: 75%;
-    padding-bottom: 5%;
-}
-.Gallery-Head>button{
-    border: 5px solid white;
-    background-color: white;
-    color: #6400C2;
-    border-radius: 10px;
-    font-size: 15px;
-    font-weight: bold;
-    height: 30px;
-}
+
 .News-Container{
-    background-color: #e7cbf6e1;
+    padding:5% 2%;
     border-radius: 5px;
-    display: flex;
-    gap: 20%;
-    padding: 5%;
-    padding-bottom: 2%;
+    padding-bottom: 12%;
 }
 .slider-card>img{
     border-radius: 5px;
@@ -112,5 +124,86 @@
     display: grid;
     grid-template-columns: 200px 200px 200px 10px;
 }
+.News-Highlight{
+    text-align: center;
+}
+.News-Container{
+    background:linear-gradient(
+        to bottom,
+        #ffffff 0%,
+        #ffffff 53%,
+        #8A2BE2 53%,
+        #8A2BE2 100%
+    );
+}.News-Head{
+    display: flex;
+    gap: 70%;
+}
+.News-Head>h2{
+    font-size:32px;
+}
+.News-Head>button{
+    align-self: center;
+    width: 8%;
+    height: 25px;
+}
+.News-Content{
+    margin-left: 2%;
+    width: 96%;
+}
+.Slider-down{
+    margin-top: 5%;
+}
 
+.service-box{
+    margin: 10% 2%;
+}
+.service-box>div{
+    justify-content: center;
+    display: flex;
+    margin: 10% 0%;
+    gap: 5%;
+}
+.service-box>div>div{
+    border: 2.5px solid #FB6F77;
+    border-radius: 5px;
+    padding: 5% 2% 2%;
+    width: 35%;
+    background-color: #4D3D54;
+    color: white;
+}
+.Image-Banner{
+    color: white;
+    background-color: #4D3D54;
+    height:520px;
+}
+.banner-1{
+    margin-left: 5%;
+    width: 60%;
+    font-size: 32px;
+    position: absolute;
+    top: 200%;
+}
+.banner-2{
+    margin-left: 5%;
+    width: 60%;
+    font-size: 32px;
+    position: absolute;
+    top: 412%;
+}
+.footer{
+    position:sticky;
+    bottom: 0;
+    z-index: -1;
+}
 
+.Image-Banner>img{
+    width: 100%;
+}
+.Image-Banner>img:hover{
+    opacity: 0.3;
+}
+.Counter{
+    background-color: #E948AD;
+    opacity: 0.7;
+}

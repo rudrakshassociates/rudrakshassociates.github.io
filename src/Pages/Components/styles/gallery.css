@@ -1,0 +1,43 @@
+.Gallery-Container{
+    background-color: #F7D05A;
+    color: white;
+    border-radius: 5px;
+    padding: 5% 5% 2%;
+}
+
+.Gallery-Head>button{
+    border: 5px solid white;
+    background-color: white;
+    color: #6400C2;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    height: 30px;
+}
+.Gallery-Head{
+    color: #4D3D54;
+    text-align:  center;
+}
+.Gallery-Head>hr{
+    border: 1px solid #E948AD;
+    background-color:#E948AD;
+    width: 12%;
+}
+.collage-index{
+    color: #A9A5AA;
+    justify-content: center;
+    display: flex;
+    gap: 10%;
+}
+.Gallery-Content{
+    border-radius: 5px;
+    padding: 2% 5% 60%;
+    background-color: white;
+}
+.collage-index>h3{
+    letter-spacing: 0.5px;
+}
+
+.collage-index>h3:hover{
+    color:#FB6F77 ;
+}

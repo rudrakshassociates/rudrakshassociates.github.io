@@ -8,7 +8,7 @@ export default function Ourservices(){
             <Navbar/>
             <div className="service-Header">
                 <div className="Header-Content">
-                    <h1>Our Services</h1>
+                    <h1>OUR SERVICES</h1>
                     <h3>Here are following services we provide</h3>
                 </div>
             </div>
