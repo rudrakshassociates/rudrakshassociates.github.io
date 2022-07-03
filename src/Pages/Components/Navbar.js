@@ -13,14 +13,14 @@ export default function Navbar(){
     window.addEventListener('scroll', changecolor);
     return (
         <div>
-            <div className={show?"Navbar-container":"Nav"}>
+            <div className={show?"about-Navbar":"Nav"}>
                 <h1><Link to="/" className="home-link"><b>RUDRAKSH</b> ASSOCIATES</Link></h1>
                 <div className="Navbar-list">
                     <ul className="links">
-                        <li><Link to="/services" className="navbar-link">Services</Link></li>
-                        <li><Link to="/projects" className="navbar-link">Our Work</Link></li>
-                        <li><Link to="/faq" className="navbar-link">About Us</Link></li>
+                        <li><Link to="/" className="navbar-link">Services</Link></li>
+                        <li><Link to="/works" className="navbar-link">Our Work</Link></li>
                         <li><Link to="/contactus" className="navbar-link">Contact</Link></li>
+                        <li><Link to="/about" className="navbar-link">About</Link></li>
                     </ul>
                     <ul className="socials">
                         <li>in</li>

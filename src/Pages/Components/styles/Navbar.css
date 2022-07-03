@@ -11,6 +11,23 @@
     z-index: 99;
     position: fixed;
     letter-spacing: 0.6px;
+    font-family: 'Raleway', sans-serif;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+.about-Navbar{
+    width: 100%;
+    opacity: 95%;
+    height: 64px;
+    background-color: white;
+    /* background-color: transparent; */
+    display: flex;
+    gap:25%;
+    align-items: center;
+    top:0;
+    z-index: 99;
+    position: fixed;
+    letter-spacing: 0.6px;
+    font-family: 'Raleway', sans-serif;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 .Nav{
@@ -32,6 +49,11 @@
     width:20%; 
     margin-left:2%;
 }
+.about-Navbar>h1{
+        width: 20%;
+        font-size: 20px;
+        margin-left:2%;
+}
 .Navbar-container>h1{
     width: 20%;
     font-size: 20px;
@@ -40,7 +62,8 @@
 .home-link{
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
-    color: white;
+    /* color: white; */
+    color: #8A2BE2;
     font-size: 22px;
     text-align: center;
     font-weight: 300;
@@ -49,7 +72,8 @@
     color: lightgray;
 }
 .Navbar-list{
-    color: white;
+    /* color: white; */
+    color: #8A2BE2;
     align-items: center;
     text-align: center;
     display: flex;
@@ -65,7 +89,8 @@
 .navbar-link{
     text-decoration: none;
     list-style: none;
-    color: white;
+    /* color: white; */
+    color: #8A2BE2;
 }
 .socials{
     font-size: 20px;

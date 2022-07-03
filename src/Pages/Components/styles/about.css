@@ -1,0 +1,102 @@
+.about-Container{
+    padding:5% 0% 0%;
+    background-color: #ffffff;
+}
+.about-Header{
+    text-align: center;
+}
+.about-Header>p{
+    font-weight: 600;
+    color: #4D3D54;
+    margin: 2% 30% 5%;
+}
+.about-Header>h1{
+    color: #FB6F77;
+    margin: 10% 25% 2%; 
+}
+.our-Story{
+    display: flex;
+    gap: 10%;
+    margin-top: 10%;
+}
+.our-Story>div{
+    margin: 5%;
+    width: 50%;
+}
+.our-Story>div>h3{
+    color: #FB6F77;
+    font-size: 20px;
+}
+.our-Story>div>h1{
+    color: #4D3D54;
+}
+.our-Story>div>p{
+    color: #E948AD;
+    font-size: 15px;
+}
+.about-values{
+    display: flex;
+    gap: 5%;
+    padding: 5%;
+    background-color: #4D3D54;
+}
+.about-values>div{
+    padding: 10% 2% 2%;
+    background-color: white;
+    width: 30%;
+}
+
+.about-articles>div{
+    display: flex;
+    gap: 2%;
+    margin: 10%;
+}
+.about-articles>h3{
+    padding: 5% 0%;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #F7D05A;
+}
+.about-articles{
+    padding:10% 5% 5% ;
+    background: linear-gradient(
+        to bottom,
+        #4D3D54 0%,
+        #4D3D54 60%,
+        #ffffff 60%,
+        #ffffff 100%,
+    );
+}
+.about-articles>div>div{
+    padding: 2%;
+    background-color: white;
+}
+.about-Insights{
+    text-align: center;
+    margin-top:10%;
+    padding: 5%;
+    background-color:#F7D05A ;
+}
+.about-Insights>h3{
+    font-size: 20px;
+    color: #FB6F77;
+}
+.about-Insights>h1{
+    color: #4D3D54;
+}
+.about-Insights>div{
+    margin-top:10%;
+    justify-content: center;
+    display: flex;
+    gap: 10%;
+}
+.about-Insights>div>div{
+    padding: 15% 2%;
+    background-color: white;
+
+}
+.about-ending{
+    padding: 10% 0% ;
+    background-color: whitesmoke;
+}
