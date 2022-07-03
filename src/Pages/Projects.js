@@ -9,22 +9,24 @@ export default function Projects(){
             <div className="Work-Header">
                 <div className="Work-Head-Content">
                     <h1>Our Work</h1>
-                    <h3>Case Studies</h3>
                     <hr></hr>
+
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</h3>
                 </div>
             </div>
-            <div className="Case Studies">
-                    <div>
+            <div className="Case-Studies">
+                    <div className="card-case">
+                        <div>
+                            <h2>LOREM IPSUM</h2>
+                           <div>LOREN IPSUM</div>
+                           <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequatLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</h4> 
+                        </div>
                         {/* Cards */}
                     </div>
             </div>
-            <div className="Lets-Connect">
-                <h3>LET'S CONNECT</h3>
-                <p>We encourage you to connect with us. For employment opportunities and inquiries, please visit our Careers page.<br/>
-                    For media and public relations inquiries, please email info@ohpd.net.<br/>
-                    For suppliers & product representatives, please email library@ohpd.net.</p>
+            <div className="footer">
+                <Footer/>
             </div>
-            <Footer/>
         </div>
     )
 }

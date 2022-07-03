@@ -1,21 +1,52 @@
 .Work-Header{
-    background-color: #430082;
-    margin: 2% 0%;
-    padding: 2% 1%;
+    background-color: #4D3D54;
+    padding: 10% 0%;
     color: white;
 }
-.Work-Head-Content>h1{
-    
-    font-size: 90px;
-    width: 10%;
+.Work-Head-Content>h1{   
+    font-size: 36px;
+    color: #F7D05A;
 }
 .Work-Head-Content{
-    margin: 0% 8%;
+    text-align: center;
+}
+.Work-Head-Content>hr{
+    border: 1px solid #FB6F77;
+    background-color:#FB6F77 ;
+    width: 15%;
 }
 .Work-Head-Content>h3{
-    position: absolute;
-    left:80%;
-    top:30%;
+    font-family: 'Raleway', sans-serif;
+    margin: 5% 10%;
     font-size: 25px;
-    font-weight: 400;
+    font-weight: 300;
+}
+.Case-Studies{
+    padding: 5%;
+    padding-bottom:100% ;
+    background-color: #F7D05A;
+}
+.card-case{
+    border-radius: 5px;
+    width: 80%;
+    height: 1000px;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    background-color: white;
+    padding:5% ;
+}
+.card-case>div>div{
+    background-color: lightgray;
+    border-radius: 5px;
+    height: 350px;
+    width: 50%;
+    margin-left: 25%;
+
+}
+.card-case>div{
+    text-align: center;
+}
+.card-case>div>h4{
+    color: #8A2BE2;
 }
