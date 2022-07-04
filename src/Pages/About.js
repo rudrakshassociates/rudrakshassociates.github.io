@@ -38,7 +38,7 @@ export default function FAQ(){
                 
                 <div className="about-articles">
                     <h3>Articles on Us</h3>
-                    <div>
+                    <div className="article-white">
                         <div>
                             {/* Images */}
                             <p>Lorem ipsum dolor sit amet,</p>
@@ -52,7 +52,7 @@ export default function FAQ(){
                             <p>Lorem ipsum dolor sit amet,</p>
                         </div>
                     </div>
-                    <div>
+                    <div className="article-color">
                         <div>
                             {/* Images */}
                             <p>Lorem ipsum dolor sit amet,</p>

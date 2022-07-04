@@ -50,6 +50,7 @@
     display: flex;
     gap: 2%;
     margin: 10%;
+    margin-bottom: 5%;
 }
 .about-articles>h3{
     padding: 5% 0%;
@@ -62,15 +63,20 @@
     padding:10% 5% 5% ;
     background: linear-gradient(
         to bottom,
-        #4D3D54 0%,
-        #4D3D54 60%,
-        #ffffff 60%,
-        #ffffff 100%,
+         #4D3D54 0%,
+         #4D3D54 65%,
+         #ffffff 65%,
+         #ffffff 100%
     );
 }
-.about-articles>div>div{
-    padding: 2%;
+.article-white>div{
+    padding: 2% 5%;
     background-color: white;
+}
+.article-color>div{
+    color: white;
+    padding: 2% 5%;
+    background-color: #4D3D54;
 }
 .about-Insights{
     text-align: center;

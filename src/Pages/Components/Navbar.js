@@ -1,6 +1,7 @@
 import React from "react"
 import {Link} from "react-router-dom"
 import "./styles/Navbar.css"
+import Dropdown from "./Dropdown";
 export default function Navbar(){
     const [show,setshow]=React.useState(false);
     const changecolor=()=>{
@@ -20,7 +21,8 @@ export default function Navbar(){
                         <li><Link to="/" className="navbar-link">Services</Link></li>
                         <li><Link to="/works" className="navbar-link">Our Work</Link></li>
                         <li><Link to="/contactus" className="navbar-link">Contact</Link></li>
-                        <li><Link to="/about" className="navbar-link">About</Link></li>
+                        {/* <li><Link to="/about" className="navbar-link">About</Link></li> */}
+                        <li><Link to="/about" className="navbar-link"><Dropdown/></Link></li>
                     </ul>
                     <ul className="socials">
                         <li>in</li>
