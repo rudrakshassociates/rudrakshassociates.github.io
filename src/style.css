@@ -4,6 +4,9 @@ body{
     font-family: 'Inter', sans-serif;
     background-color: #E7D8EF;
 }
+html {
+    scroll-behavior: smooth;
+}
 .footer{
     position:sticky;
     bottom: 0;

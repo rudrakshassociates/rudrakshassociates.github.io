@@ -54,6 +54,18 @@
         font-size: 20px;
         margin-left:2%;
 }
+.about-home-link{
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    /* color: white; */
+    color: #ffffff;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 300;
+}
+.about-home-link:hover{
+    color: lightgray;
+}
 .Navbar-container>h1{
     width: 20%;
     font-size: 20px;
@@ -71,6 +83,17 @@
 .home-link:hover{
     color: lightgray;
 }
+.about-Navbar-list{
+    /* color: white; */
+    color: #ffffff;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    gap: 3rem;
+    font-size: 15px;
+    font-weight: 500;
+}
+
 .Navbar-list{
     /* color: white; */
     color: #8A2BE2;
@@ -85,6 +108,12 @@
     list-style: none;
     display: flex;
     gap: 2rem;
+}
+.about-navbar-link{
+    text-decoration: none;
+    list-style: none;
+    /* color: white; */
+    color: #ffffff;
 }
 .navbar-link{
     text-decoration: none;

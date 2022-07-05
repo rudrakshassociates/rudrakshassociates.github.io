@@ -1,17 +1,46 @@
 import React from "react"
 import "./styles/dropdown.css"
 export default function Dropdown(){
+    const [about,setabout]=React.useState(false);
+    function scrolltoValues(){
+        if(window.location.pathname=="/about"){
+            window.scrollTo(0,850);
+        }
+    }
+    function scrolltoInsights(){
+        if(window.location.pathname=="/about"){
+            window.scrollTo(0,2700);
+        }
+    }
+    function scrolltoCarrer(){
+        if(window.location.pathname=="/about"){
+            window.scrollTo(0,2100);
+        }
+    }
+    function scrolltoStory(){
+        if(window.location.pathname=="/about"){
+            window.scrollTo(0,400);
+        }
+    }
+    const changetextcolor=()=>{
+        if(window.location.pathname=="/about"){
+            setabout(true);
+        }else{
+            setabout(false);
+        }
+    }
+    window.addEventListener('load',changetextcolor);
     return (
-        <div className="dropdown">
+        <div className={about?"dropdown":"dropdown-not-about"}>
             <button className="dropbtn">About</button>
             <div class="dropdown-content">
                 <div>
-                    <a href="#">Our Story</a>
-                    <a href="#">Carrer</a>
+                    <li onClick={scrolltoStory}>Our Story</li>
+                    <li onClick={scrolltoCarrer}>Carrer</li>
                 </div>
                 <div>
-                    <a href="#">Insights</a>
-                    <a href="#">Our Values</a>
+                    <li onClick={scrolltoInsights}>Insights</li>
+                    <li onClick={scrolltoValues}>Our Values</li>
                 </div>
             </div>
 
