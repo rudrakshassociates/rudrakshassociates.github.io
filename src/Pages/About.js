@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 import Footer from "./Components/Footer"
 import Navbar from "./Components/Navbar"
 import "./Components/styles/about.css"
@@ -85,15 +86,17 @@ export default function FAQ(){
                     <div>
                         <div>
                                 {/* Images */}
-                                <p>Lorem ipsum dolor sit amet,</p>
+                                <Link to="/article"><p>Lorem ipsum dolor sit amet,</p></Link>
                         </div>
                         <div>
                                 {/* Images */}
-                                <p>Lorem ipsum dolor sit amet,</p>
+                                <Link to="/article"><p>Lorem ipsum dolor sit amet,</p></Link>
+
                         </div>
                         <div>
                                 {/* Images */}
-                                <p>Lorem ipsum dolor sit amet,</p>
+                                <Link to="/article"><p>Lorem ipsum dolor sit amet,</p></Link>
+
                         </div>
                     </div>
                 </div>
