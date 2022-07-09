@@ -11,7 +11,7 @@ import About from "./Pages/About";
 import "./style.css"
 import Ourservices from "./Pages/OurServices";
 import Projects from "./Pages/Projects";
-import Article from "./Pages/Components/Article";
+import Article from "./Pages/Article";
 export default function App(){
   return(
     <div>

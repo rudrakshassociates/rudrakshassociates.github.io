@@ -1,0 +1,33 @@
+.Blog-Content{
+    padding: 5% 2% 1%;
+    margin: 0% 10%;
+    background-color: white;
+}
+.Blog-Content>h2{
+    font-size: 25px;
+}
+.Blog-Content>p{
+    padding: 2% 10%;
+    text-align: left;
+    font-size: 20px;
+}
+.Content{
+    text-align: center;
+    background-color: lightgray;
+}
+.Content>h1{
+    margin-bottom: 0%;
+    padding: 2%;
+    background-color: white;
+}
+.Article{
+    padding-top :2% ;
+    background-color: white;
+}
+.Header>img{
+    width: 100%;
+    border-radius: 10px;
+}
+.Header{
+    margin: 8% 2%;
+}

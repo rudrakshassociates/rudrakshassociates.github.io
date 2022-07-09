@@ -1,9 +1,15 @@
 import React from "react"
-import { Link } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import Footer from "./Components/Footer"
 import Navbar from "./Components/Navbar"
 import "./Components/styles/about.css"
 export default function FAQ(){
+    function name(){
+        const params=useParams();
+        return (
+            <span>params.Name</span>
+        )
+    }
     return(
         <div>
             <div className="about-Container">
@@ -86,16 +92,16 @@ export default function FAQ(){
                     <div>
                         <div>
                                 {/* Images */}
-                                <Link to="/article"><p>Lorem ipsum dolor sit amet,</p></Link>
+                                <Link to="/article" params={{Name:"Inside"}} onClick={name}><p>Lorem ipsum dolor sit amet,</p></Link>
                         </div>
                         <div>
                                 {/* Images */}
-                                <Link to="/article"><p>Lorem ipsum dolor sit amet,</p></Link>
+                                <Link to="/article" params={{Name:"Around"}} onClick={name}><p>Lorem ipsum dolor sit amet,</p></Link>
 
                         </div>
                         <div>
                                 {/* Images */}
-                                <Link to="/article"><p>Lorem ipsum dolor sit amet,</p></Link>
+                                <Link to="/article" params={{Name:"People"}} onClick={name}><p>Lorem ipsum dolor sit amet,</p></Link>
 
                         </div>
                     </div>
