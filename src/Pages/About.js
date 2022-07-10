@@ -1,14 +1,16 @@
 import React from "react"
-import { Link, useParams } from "react-router-dom"
+import { useNavigate} from "react-router-dom"
 import Footer from "./Components/Footer"
 import Navbar from "./Components/Navbar"
 import "./Components/styles/about.css"
 export default function FAQ(){
-    function name(){
-        const params=useParams();
-        return (
-            <span>params.Name</span>
-        )
+    const navigate=useNavigate();
+    function Name(event){
+        const{className}=event.target
+        navigate({
+            pathname:'/article',
+            search:`${className}`
+        })
     }
     return(
         <div>
@@ -48,29 +50,33 @@ export default function FAQ(){
                     <div className="article-white">
                         <div>
                             {/* Images */}
-                            <p>Lorem ipsum dolor sit amet,</p>
+                            <a onClick={Name}><p className="News-1">Lorem ipsum dolor sit amet,</p></a>
                         </div>
                         <div>
                             {/* Images */}
-                            <p>Lorem ipsum dolor sit amet,</p>
+                            <a onClick={Name}><p className="News-2">Lorem ipsum dolor sit amet,</p></a>
                         </div>
                         <div>
                             {/* Images */}
-                            <p>Lorem ipsum dolor sit amet,</p>
+                            <a onClick={Name}><p className="News-3">Lorem ipsum dolor sit amet,</p></a>
+
                         </div>
                     </div>
                     <div className="article-color">
                         <div>
                             {/* Images */}
-                            <p>Lorem ipsum dolor sit amet,</p>
+                            <a onClick={Name}><p className="News-4">Lorem ipsum dolor sit amet,</p></a>
+
                         </div>
                         <div>
                             {/* Images */}
-                            <p>Lorem ipsum dolor sit amet,</p>
+                            <a onClick={Name}><p className="News-5">Lorem ipsum dolor sit amet,</p></a>
+
                         </div>
                         <div>
                             {/* Images */}
-                            <p>Lorem ipsum dolor sit amet,</p>
+                            <a onClick={Name}><p className="News-6">Lorem ipsum dolor sit amet,</p></a>
+
                         </div>
 
                     </div>
@@ -92,16 +98,16 @@ export default function FAQ(){
                     <div>
                         <div>
                                 {/* Images */}
-                                <Link to="/article" params={{Name:"Inside"}} onClick={name}><p>Lorem ipsum dolor sit amet,</p></Link>
+                                <a onClick={Name}><p className="Inside">Lorem ipsum dolor sit amet,</p></a>
                         </div>
                         <div>
                                 {/* Images */}
-                                <Link to="/article" params={{Name:"Around"}} onClick={name}><p>Lorem ipsum dolor sit amet,</p></Link>
+                                <a onClick={Name}><p className="Around">Lorem ipsum dolor sit amet,</p></a>
 
                         </div>
                         <div>
                                 {/* Images */}
-                                <Link to="/article" params={{Name:"People"}} onClick={name}><p>Lorem ipsum dolor sit amet,</p></Link>
+                                <a onClick={Name} ><p className="People">Lorem ipsum dolor sit amet,</p></a>
 
                         </div>
                     </div>

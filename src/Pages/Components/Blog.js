@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 export default function Blog(props){
+    const location=window.location;
     const Contents=props.Content.map(Info=>{
         return(
             <div className="Blog-Content">
@@ -11,7 +12,7 @@ export default function Blog(props){
     })
     return (
         <div className="Blog">
-            {props.name=="Inside" && <div className="Content">
+            {props.name==location.search && <div className="Content">
                 <h1>{props.Title}</h1>
                 {Contents}
             </div>}

@@ -3,8 +3,9 @@ import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 import ArticleList from "./Components/List/ArticleList";
 import "./Components/styles/article.css"
-export default function Article(props){
-    console.log(props);
+export default function Article(){
+    const location=window.location;
+    console.log(location.search)
     const blogs=ArticleList.map(Data=>{
         return (
             <Blog
@@ -16,7 +17,7 @@ export default function Article(props){
     const banner=ArticleList.map(Image=>{
         return(
             <div className="Header">
-                {Image.name=="Inside" && <img src={Image.header}/>}
+                {Image.name==location.search && <img src={Image.header}/>}
             </div>
         )
     })
