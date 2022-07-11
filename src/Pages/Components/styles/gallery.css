@@ -30,8 +30,9 @@
     gap: 10%;
 }
 .Gallery-Content{
+    max-height:700px;
     border-radius: 5px;
-    padding: 2% 5% 60%;
+    padding: 2% 5% ;
     background-color: white;
 }
 .collage-index>h3{
@@ -40,4 +41,32 @@
 
 .collage-index>h3:hover{
     color:#FB6F77 ;
+}
+.collage{
+    overflow-y: scroll;   
+}
+.collage::-webkit-scrollbar{
+    border-radius: 10px;
+    width: 8px;
+}
+
+.collage::-webkit-scrollbar-thumb:hover{
+    border-radius: 10px;
+    background-color: #ececec;
+}
+.collage-row{
+    max-height: 570px;
+    padding: 5% 1%;
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(auto-fill,minmax(190px ,2fr));
+    row-gap: 2rem;
+}
+.collage-row>img{
+    object-fit:cover;
+    width: 100%;
+    height: 100%;
+}
+.collage-row>img:hover{
+    opacity: 0.5;
 }

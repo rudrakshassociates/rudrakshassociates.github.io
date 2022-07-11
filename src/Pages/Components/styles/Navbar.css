@@ -134,3 +134,6 @@
 .socials>li:hover{
     color: lightgray;
 }
+.about-navbar-link:hover{
+    color: lightgray;
+}

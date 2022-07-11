@@ -31,9 +31,9 @@ export default function Dropdown(){
     }
     window.addEventListener('load',changetextcolor);
     return (
-        <div className={about?"dropdown":"dropdown-not-about"}>
+        <div className="dropdown">
             <button className="dropbtn">About</button>
-            <div class="dropdown-content">
+            <div className="dropdown-content">
                 <div>
                     <li onClick={scrolltoStory}>Our Story</li>
                     <li onClick={scrolltoCarrer}>Carrer</li>
