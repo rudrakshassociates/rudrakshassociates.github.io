@@ -4,7 +4,7 @@ import Navbar from "./Components/Navbar"
 import "./Components/styles/contactus.css"
 export default function ContactUs(){
     return(
-        <div>
+        <div onLoad={window.scrollTo(0,0)}>
             <div className="main">
                 <Navbar/>
                 <div className="CU-Container">

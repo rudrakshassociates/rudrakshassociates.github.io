@@ -1,5 +1,5 @@
 import React from "react"
-import "./styles/dropdown.css"
+import "./styles/Nav-dropdown.css"
 export default function Dropdown(){
     const [about,setabout]=React.useState(false);
     const [show,setshow]=React.useState(false);
@@ -41,7 +41,7 @@ export default function Dropdown(){
     window.addEventListener('scroll', changecolor);
     return (
         <div className="dropdown">
-            <button className={show?"dropbtn-nav":"dropbtn"}>About</button>
+            <button className={show?"N-dropbtn-nav":"N-dropbtn"}>About</button>
             <div className="dropdown-content">
                 <div>
                     <li onClick={scrolltoStory}>Our Story</li>

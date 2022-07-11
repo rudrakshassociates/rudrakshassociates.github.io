@@ -1,10 +1,10 @@
 import React from "react"
 import Footer from "./Components/Footer"
-import Navbar from "./Components/Navbar"
+import Navbar from "./Components/Navbar.js"
 import "./Components/styles/ourwork.css"
 export default function Projects(){
     return(
-        <div>
+        <div onLoad={window.scrollTo(0,0)}>
             <Navbar/>
             <div className="Work-Header">
                 <div className="Work-Head-Content">

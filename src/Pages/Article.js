@@ -1,8 +1,8 @@
 import Blog from "./Components/Blog";
 import Footer from "./Components/Footer";
-import Navbar from "./Components/Navbar";
 import ArticleList from "./Components/List/ArticleList";
 import "./Components/styles/article.css"
+import Nav from "./Components/WhiteBGNav";
 export default function Article(){
     const location=window.location;
     console.log(location.search)
@@ -22,9 +22,9 @@ export default function Article(){
         )
     })
     return(
-        <div>
+        <div onLoad={window.scrollTo(0,0)}>
             <div className="Article">
-                <Navbar/>
+                <Nav/>
                 {banner}
                 {blogs}
             </div>

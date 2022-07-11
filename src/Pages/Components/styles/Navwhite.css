@@ -1,8 +1,8 @@
-.Navbar-container{
+.N-Navbar-Container{
     width: 100%;
     opacity: 95%;
     height: 64px;
-    background-color: white;
+    background-color: #8A2BE2;
     /* background-color: transparent; */
     display: flex;
     gap:25%;
@@ -12,10 +12,10 @@
     position: fixed;
     letter-spacing: 0.6px;
     font-family: 'Raleway', sans-serif;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.3);
 }
 
-.Nav{
+.N-Nav{
     width: 100%;
     height: 64px;
     background-color: transparent;
@@ -29,7 +29,7 @@
     letter-spacing: 0.6px;
     font-family: 'Raleway', sans-serif;
 }
-.Nav>h1{
+.N-Nav>h1{
     font-size: 20px;
     width:20%; 
     margin-left:2%;
@@ -39,24 +39,7 @@
         font-size: 20px;
         margin-left:2%;
 }
-.home-link-nav{
-    font-family: 'Raleway', sans-serif;
-    text-decoration: none;
-    /* color: white; */
-    color: #8A2BE2;
-    font-size: 22px;
-    text-align: center;
-    font-weight: 300;
-}
-.home-link-nav:hover{
-    color: #E948AD;
-}
-.Navbar-container>h1{
-    width: 20%;
-    font-size: 20px;
-    margin-left:2%;
-}
-.home-link{
+.N-home-link-nav{
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
     /* color: white; */
@@ -65,12 +48,29 @@
     text-align: center;
     font-weight: 300;
 }
-.home-link:hover{
+.N-home-link-nav:hover{
     color: lightgray;
 }
-.Navbar-list-nav{
+.N-Navbar-Container>h1{
+    width: 20%;
+    font-size: 20px;
+    margin-left:2%;
+}
+.N-home-link{
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
     /* color: white; */
     color: #8A2BE2;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 300;
+}
+.N-home-link:hover{
+    color: #E948AD;
+}
+.N-Navbar-List-nav{
+    /* color: white; */
+    color: white;
     align-items: center;
     text-align: center;
     display: flex;
@@ -78,13 +78,13 @@
     font-size: 15px;
     font-weight: 500;
 }
-.Navbar-list-nav:hover{
-    color: #E948AD;
+.N-Navbar-List-nav:hover{
+    color: lightgray;
 }
 
-.Navbar-list{
+.N-Navbar-List{
     /* color: white; */
-    color: white;
+    color: #8A2BE2;
     align-items: center;
     text-align: center;
     display: flex;
@@ -97,29 +97,29 @@
     display: flex;
     gap: 2rem;
 }
-.navbar-link-nav{
-    text-decoration: none;
-    list-style: none;
-    /* color: white; */
-    color: #8A2BE2;
-}
-.navbar-link{
+.N-navbar-link-nav{
     text-decoration: none;
     list-style: none;
     /* color: white; */
     color: white;
 }
-.socials{
+.N-navbar-link{
+    text-decoration: none;
+    list-style: none;
+    /* color: white; */
+    color: #8A2BE2;
+}
+.N-socials{
     font-size: 20px;
     font-weight: 600;
     list-style: none;
     display: flex;
     gap: 1rem;
 }
-.navbar-link:hover{
-    color: lightgray;
+.N-navbar-link:hover{
+    color: #E948AD;
 }
 
-.navbar-link-nav:hover{
-    color: #E948AD;
+.N-navbar-link-nav:hover{
+    color: lightgray;
 }

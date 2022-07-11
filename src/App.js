@@ -9,7 +9,6 @@ import NotFound from "./Pages/NotFound";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import "./style.css"
-import Ourservices from "./Pages/OurServices";
 import Projects from "./Pages/Projects";
 import Article from "./Pages/Article";
 export default function App(){
@@ -20,7 +19,6 @@ export default function App(){
                 <Route  path="/" element={<Home/>}/>
                 <Route  path="/contactus" element={<ContactUs/>}/>
                 <Route  path="/about" element={<About/>}/>
-                <Route  path="/services" element={<Ourservices/>}/>
                 <Route  path="/works" element={<Projects/>}/>
                 <Route  path="/article" element={<Article/>}/>
                 <Route path="*" element={<NotFound/>} />

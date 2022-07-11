@@ -1,7 +1,7 @@
 import React from "react"
 import { useNavigate} from "react-router-dom"
 import Footer from "./Components/Footer"
-import Navbar from "./Components/Navbar"
+import Nav from "./Components/WhiteBGNav.js"
 import "./Components/styles/about.css"
 export default function FAQ(){
     const navigate=useNavigate();
@@ -13,9 +13,9 @@ export default function FAQ(){
         })
     }
     return(
-        <div>
+        <div onLoad={window.scrollTo(0,0)}>
             <div className="about-Container">
-                <Navbar/>
+                <Nav/>
                 <div className="about-Header">
                     <h1>Years of Empowering Enterprise Through Our Services</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>

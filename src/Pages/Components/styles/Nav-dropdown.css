@@ -23,17 +23,17 @@
     border: none;
 }
 
-.dropbtn{
+.N-dropbtn{
     background-color: transparent;
-    color: #ffffff;
+    color: #8A2BE2;
     font-size: 15px;
     font-family: 'Raleway',sans-serif;
     font-weight: 500;
     border: none;
 }
-.dropbtn-nav{
+.N-dropbtn-nav{
     background-color: transparent;
-    color: #8A2BE2;
+    color: white;
     font-size: 15px;
     font-family: 'Raleway',sans-serif;
     font-weight: 500;
@@ -55,9 +55,9 @@
     display: flex;
     gap: 20%;
 }
-.dropbtn:hover{
-    color: lightgray;
+.N-dropbtn:hover{
+    color: #8A2BE2;
 }
-.dropbtn-nav:hover{
-    color: #E948AD;
+.N-dropbtn-nav:hover{
+    color: lightgray;
 }

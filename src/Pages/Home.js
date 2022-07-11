@@ -10,7 +10,7 @@ import News from "./Components/News.js"
 export default function Home(){
     
     return(
-        <div>
+        <div onLoad={window.scrollTo(0,0)}>
             <div className="main-body">
 
                 </div>

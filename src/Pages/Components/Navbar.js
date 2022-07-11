@@ -29,15 +29,15 @@ export default function Navbar(){
     window.addEventListener('scroll', changecolor);
     return (
         <div>
-            <div className={show?"about-Navbar":"Nav"}>
-                <h1><Link to="/" className={about?"home-link":"about-home-link"}><b>RUDRAKSH</b> ASSOCIATES</Link></h1>
-                <div className={about?"Navbar-list":"about-Navbar-list"}>
+            <div className={show?"Navbar-container":"Nav"}>
+                <h1><Link to="/" className={show?"home-link-nav":"home-link"}><b>RUDRAKSH</b> ASSOCIATES</Link></h1>
+                <div className={show?"Navbar-list-nav":"Navbar-list"}>
                     <ul className="links">
-                        <li onClick={scrolltoServices} className={about?"navbar-link":"about-navbar-link"}>Services</li>
-                        <li><Link to="/works" className={about?"navbar-link":"about-navbar-link"}>Our Work</Link></li>
+                        <li onClick={scrolltoServices} className={show?"navbar-link-nav":"navbar-link"}>Services</li>
+                        <li><Link to="/works" className={show?"navbar-link-nav":"navbar-link"}>Our Work</Link></li>
                         
-                        <li><Link to="/contactus" className={about?"navbar-link":"about-navbar-link"}>Contact</Link></li>
-                        <li><Link to="/about" className={about?"navbar-link":"about-navbar-link"}><Dropdown/></Link></li>
+                        <li><Link to="/contactus" className={show?"navbar-link-nav":"navbar-link"}>Contact</Link></li>
+                        <li><Link to="/about" className={show?"navbar-link-nav":"navbar-link"}><Dropdown/></Link></li>
                     </ul>
                     <ul className="socials">
                         <li>in</li>
