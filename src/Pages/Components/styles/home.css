@@ -3,32 +3,36 @@
     z-index:10;
 }
 .Home-bg{
-    background-color: #4D3D54;
+    background-color: #543D4B;
     /* margin-top: 6%; */
     width: 100%;
     height: 1200px;
     overflow: hidden;
 }
-.Home-bg>img{
-    opacity: 0.6;
-    margin: 0% -30%;
-    width: 250%;
+.Home-bg{
+    background-image: url("/public/Images/headerbannertab.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
+
 .Title{
+    font-family: 'Raleway',sans-serif;
     letter-spacing: 1px;
     color: white;
-    margin-top: 25%;
+    margin-top: 20%;
     text-align: center;
 }
 .Title>h1{
     line-height: 5px;
-    font-weight: bold;
+    font-weight: 400;
     color: #F7D05A;
     margin-left: 1.5%;
-    font-size: 32px;
+    font-size: 40px;
 }
 .buttons{
-    margin-top: 10%;
+    margin-top: 15%;
     justify-content: center;
     display: flex;
     gap: 10%;
@@ -61,33 +65,6 @@
     color: #6400C2;
     background-color: white ;
     border-color: white;
-}
-.our-services{
-    position: absolute;
-    width: 80%;
-    top: 100%;
-    height: 800px;
-    border-radius: 5px;
-    color: #4D3D54;
-    background-color: white;
-    padding: 5% 6%;
-}
-.service-container{
-    height: 800px;
-    width: 90%;
-    padding: 1% 5%;
-    background-color: #F7D05A;
-}
-.service-info>p{
-    font-size: 20px;
-}
-.service-info>hr{
-    border: 1.5px solid #FB6F77;
-    background-color: #FB6F77;
-    width: 15%;
-}
-.service-info{
-    text-align: center;
 }
 .Info-para{
     font-size: 20px;
@@ -132,8 +109,8 @@
         to bottom,
         #ffffff 0%,
         #ffffff 53%,
-        #8A2BE2 53%,
-        #8A2BE2 100%
+        #BD2BE2 53%,
+        #BD2BE2 100%
     );
 }.News-Head{
     display: flex;
@@ -155,26 +132,9 @@
     margin-top: 5%;
 }
 
-.service-box{
-    margin: 10% 2%;
-}
-.service-box>div{
-    justify-content: center;
-    display: flex;
-    margin: 10% 0%;
-    gap: 5%;
-}
-.service-box>div>div{
-    border: 2.5px solid #FB6F77;
-    border-radius: 5px;
-    padding: 5% 2% 2%;
-    width: 35%;
-    background-color: #4D3D54;
-    color: white;
-}
 .Image-Banner{
     color: white;
-    background-color: #4D3D54;
+    background-color: #543D4B;
     height:520px;
 }
 .banner-1{
@@ -186,24 +146,102 @@
 }
 .banner-2{
     margin-left: 5%;
-    width: 60%;
+    width: 50%;
     font-size: 32px;
     position: absolute;
-    top: 412%;
+    top: 410%;
 }
 .footer{
     position:sticky;
     bottom: 0;
     z-index: -1;
 }
+.Image-Banner{
+    height:400px;
+}
 
 .Image-Banner>img{
     width: 100%;
 }
 .Image-Banner>img:hover{
-    opacity: 0.3;
+    opacity: 0.8;
 }
 .Counter{
     background-color: #E948AD;
     opacity: 0.7;
+}
+.downbutton{
+    position: absolute;
+    top: 1000px;
+    left: 50%;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Raleway',sans-serif;
+    color: white;
+}
+.downbutton:hover{
+    color: #ffca2b;
+}
+@media only screen and (min-width:1100px){
+    .Home-bg{
+        background-image: url("/public/Images/headerbanner.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .Title{
+        width: 30%;
+        margin-left: 15%;
+        margin-top: 15%;
+    }
+    .Title>h1{
+        font-size: 50px;
+    }
+    .Title>h2{
+        font-size: 25px;
+    }
+    .Title-info{
+        width: 70%;
+        text-align: left;
+        margin-left: 25%;
+        margin-top: 5%;
+    }
+    .Title-info>p{
+        margin-left:-12% ;
+        text-align: center;
+        width: 40%;
+    }
+    .News-Highlight{
+        text-align: center;
+    }
+    .News-Container{
+        background:linear-gradient(
+            to bottom,
+            #ffffff 0%,
+            #ffffff 53%,
+            #BD2BE2 53%,
+            #BD2BE2 100%
+        );
+    }.News-Head{
+        display: flex;
+        gap: 70%;
+    }
+    .News-Head>h2{
+        font-size:32px;
+    }
+    .News-Head>button{
+        align-self: center;
+        width: 8%;
+        height: 25px;
+    }
+    .News-Content{
+        margin: 0% 18%;
+        width: 63%;
+    }
+    .buttons{
+        justify-content: left;
+        margin: 5% 20%;
+    }
+}
+@media only screen and (max-width:320px){
 }

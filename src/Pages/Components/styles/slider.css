@@ -11,7 +11,13 @@
     margin-bottom: 0%;
     align-items: center;
 }
-
+#slider-card-title{
+    width: 5%;
+    margin: 20% 0%;
+}
+#slider-card-description{
+    margin: 30% 5%;
+}
 .slider{
     width: 100%;
     height: 400px;

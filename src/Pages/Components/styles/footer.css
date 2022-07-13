@@ -2,7 +2,7 @@
     
     width: 100%;
     padding: 10% 0% 3% 0% ;
-    background-color: #4D3D54;
+    background-color: #543D4B;
     color: #ffffff;
     text-align: center;
     -webkit-font-smoothing: antialiased;
@@ -70,8 +70,8 @@
 }
 #number{
     margin-left: 20%;
-    background-color: #9D3BFF;
-    border-color: #9D3BFF;
+    background-color: #BD2BE2;
+    border-color: #BD2BE2;
     color: white;
     font-weight: bold;
 }
@@ -93,11 +93,11 @@
     color: lightgray;
 }
 .Link-block>ul>h3:hover{
-    color: #E948AD;
+    color: #FB6F6F;
 }
 #contact:hover{
-    background-color:#FB6F77;
-    border-color: #FB6F77;
+    background-color:#FB6F6F;
+    border-color: #FB6F6F;
     color: white;
 }
 #number:hover{

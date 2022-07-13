@@ -2,7 +2,7 @@
     width: 100%;
     opacity: 95%;
     height: 64px;
-    background-color: #8A2BE2;
+    background-color: #BD2BE2;
     /* background-color: transparent; */
     display: flex;
     gap:25%;
@@ -60,7 +60,7 @@
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
     /* color: white; */
-    color: #8A2BE2;
+    color: #BD2BE2;
     font-size: 22px;
     text-align: center;
     font-weight: 300;
@@ -84,7 +84,7 @@
 
 .N-Navbar-List{
     /* color: white; */
-    color: #8A2BE2;
+    color: #BD2BE2;
     align-items: center;
     text-align: center;
     display: flex;
@@ -122,4 +122,22 @@
 
 .N-navbar-link-nav:hover{
     color: lightgray;
+}
+@media only screen and (min-width:1100px){
+    .N-Nav{
+        gap: 15%;
+    }
+    .N-Nav>h1{
+        font-size: 20px;
+        width:20%; 
+        margin-left:20%;
+    }
+    .N-Navbar-Container{
+        gap: 15%;
+    }
+    .N-Navbar-Container>h1{
+        font-size: 20px;
+        width:20%; 
+        margin-left:20%;
+    }
 }

@@ -7,7 +7,7 @@
 }
 .about-Header>p{
     font-weight: 600;
-    color: #4D3D54;
+    color: #543D4B;
     margin: 2% 30% 5%;
 }
 .about-Header>h1{
@@ -28,28 +28,35 @@
     font-size: 20px;
 }
 .our-Story>div>h1{
-    color: #4D3D54;
+    color: #543D4B;
 }
 .our-Story>div>p{
-    color: #E948AD;
+    color: #FB6F6F;
     font-size: 15px;
 }
 .about-values{
     display: flex;
     gap: 5%;
     padding: 5%;
-    background-color: #4D3D54;
+    background-color: #543D4B;
 }
 .about-values>div{
-    padding: 10% 2% 2%;
+    padding: 2%;
     background-color: white;
     width: 30%;
+}
+.about-values>div>img{
+    margin: 0% 20%;
+    width: 60%;
+}
+.about-values>div>h2{
+    text-align: center;
 }
 
 .about-articles>div{
     display: flex;
     gap: 2%;
-    margin: 10%;
+    margin: 5%;
     margin-bottom: 5%;
 }
 .about-articles>h3{
@@ -60,12 +67,12 @@
     color: #F7D05A;
 }
 .about-articles{
-    padding:10% 5% 5% ;
+    padding:5% ;
     background: linear-gradient(
         to bottom,
-         #4D3D54 0%,
-         #4D3D54 65%,
-         #ffffff 65%,
+         #543D4B 0%,
+         #543D4B 60%,
+         #ffffff 60%,
          #ffffff 100%
     );
 }
@@ -76,7 +83,7 @@
 .article-color>div{
     color: white;
     padding: 2% 5%;
-    background-color: #4D3D54;
+    background-color: #543D4B;
 }
 .about-Insights{
     text-align: center;
@@ -89,20 +96,100 @@
     color: #FB6F77;
 }
 .about-Insights>h1{
-    color: #4D3D54;
+    color: #543D4B;
 }
 .about-Insights>div{
     margin-top:10%;
     justify-content: center;
     display: flex;
-    gap: 10%;
+    gap: 5%;
 }
 .about-Insights>div>div{
-    padding: 15% 2%;
+    border-radius: 5px;
+    width: 60%;
+    padding-bottom: 2%;
     background-color: white;
 
 }
+.about-Insights>div>div>p{
+    padding: 2% 5%;
+    text-align: center;
+    font-family: 'Raleway',sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+.about-Insights>div>div>img{
+    object-fit: contain;
+    width: 100%;
+}
 .about-ending{
-    padding: 10% 0% ;
     background-color: whitesmoke;
+}
+.about-ending>img{
+    width: 100%;
+}
+.Story-Image>img{
+    margin-left: -40%;
+    width: 150%;
+}
+.Carrer-Image>img{
+    width: 150%;
+}
+@media only screen and (min-width:1100px){
+    .about-Container{
+        padding:1% 0% 0%;
+    }
+    .about-Header>p{
+        margin: 2% 35% 5%;
+    }
+    .about-Header>h1{
+        margin: 10% 35% 2%; 
+    }
+    .our-Story{
+        width: 70%;
+        gap: 2%;
+        margin: 0% 18%;
+        margin-top: 5%;
+    }
+    .our-Story>div{
+        width: 100%;
+    }
+    .our-Story>div>h1{
+        width: 70%;
+    }
+    .our-Story>div>p{
+        width: 80%;
+    }
+    .Story-Image>img{
+        padding-left: 35%;
+        width: 90%;
+    }
+    .about-values{
+        justify-content: center;
+    }
+    .about-values>div{
+        width: 15%;
+    }
+    .about-articles>div{
+        display: flex;
+        gap: 2%;
+        margin: 0% 25%;
+        margin-bottom: 2%;
+    }
+    .about-articles>h3{
+        padding: 2% 0%;
+        font-size: 32px;
+    }
+    .about-Insights>div{
+        width: 60%;
+        margin-top:8%;
+        margin-left:20% ;
+    }
+    .Carrer-Image>img{
+        padding-right: 35%;
+        width: 90%;
+    }
+}
+@media only screen and (max-width:320px){
+
 }
