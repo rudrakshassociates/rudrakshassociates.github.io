@@ -1,51 +1,65 @@
-export default [
+const GHList= [
     {
-        filter:"Electrical",
+        category:"Electrical",
         image:"Images/dp.jpg"
     },
     {
-        filter:"",
+        category:"",
         image:"Images/dp.jpg"
     },
     {
+        category:"",
         image:"Images/dp.jpg"
     },
     {
+        category:"Electrical",
         image:"Images/dp.jpg"
     },
 
     {
+        category:"",
         image:"Images/banner.jpg"
     },
     {
+        category:"",
         image:"Images/dp.jpg"
     },
     {
+        category:"",
         image:"Images/dp.jpg"
     },
     {
+        category:"",
         image:"Images/dp.jpg"
     },
     {
+        category:"",
         image:"Images/contact-head.jpeg"
     },
     {
+        category:"",
         image:"Images/dp.jpg"
     },
     {
+        category:"",
         image:"Images/dp.jpg"
     },
     {
+        category:"",
         image:"Images/dp.jpg"
     },
     {
+        category:"",
         image:"Images/dp.jpg"
     },
     {
+        category:"Fire Station",
         image:"Images/dp.jpg"
     },
     {
+        category:"School",
         image:"Images/dp.jpg"
     }
 
 ]
+export default GHList;

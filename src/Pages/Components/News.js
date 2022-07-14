@@ -8,12 +8,11 @@ export default function News(){
         <div>
            <div className="News-Container">
                 <div className="News-Highlight">
-                    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </h1>
+                    <h1>Rudraksh Associates had paved way for their customers with their services in electrical and construction field for over a decade, and will continue to do so in the future across the country.</h1>
 
                 </div>
                 <div className="News-Head">
                     <h2>Latest News</h2>
-                    <button>See All</button>
                 </div>
                 <div className="News-Content">
                     <div className="Slider-down">

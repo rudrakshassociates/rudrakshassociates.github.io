@@ -1,9 +1,9 @@
-
 .service-box{
+    position: relative;
     overflow-y: scroll;
     max-height: 620px;
     width: 850px;
-    z-index: 100;
+    z-index: 2;
     margin: 5% 10%;
     display: grid;
     gap: 0.5rem;
@@ -11,28 +11,36 @@
     row-gap: 2rem;
 }
 .service-box::-webkit-scrollbar{
-    z-index: 100;
+    width: 10px;
     border-radius: 10px;
-    width: 8px;
+    background-color: #543d4b28;
+}
+.service-box::-webkit-scrollbar-thumb{
+    background-color: #F7D05A;
+    border-radius: 10px;
 }
 
-.service-card-box::-webkit-scrollbar-thumb{
-    z-index: 100;
-    border-radius: 10px;
-    background-color: #FB6F77;
-}
 .service-card-box{
-    z-index: 98;
+    z-index: 2;
     width: 70%;
     height: 250px;
     border: 2.5px solid #FB6F77;
     border-radius: 5px;
-    padding: 5% 2% 2%;
+    padding: 2% 2% 2%;
     background-color: #543D4B;
     color: white;
 }
+.service-card-box>h3{
+    margin-top: 1%;
+    letter-spacing: 2px;
+
+}
+.service-card-box>img{
+    width: 15%;
+}
 
 .our-services{
+    z-index: 0;
     position:absolute;
     width: 80%;
     height: 800px;
@@ -70,12 +78,35 @@
         padding: 2% 5%;
     }
     .service-box{
-        width: 70%;
+        width: 65%;
         margin: 4% 20%;
         gap: 2rem;
         row-gap: 3rem;
     }
 }
-@media only screen and (max-width:320px){
-
+@media only screen and (max-width:600px){
+    .our-services{
+        width: 80%;
+        height: 750px;
+        top: 100%;
+    }
+    .service-container{
+        height: 750px;
+        padding: 2% 5%;
+    }
+    .service-box{
+        width: 90%;
+        margin: 2% 5%;
+        max-height: 600px;
+        gap: 2rem;
+        row-gap: 3rem;
+    }
+    .service-info>hr{
+        width: 30%;
+    }
+    .service-card-box{
+        width: 50%;
+        height: 220px;
+        margin: 0% 25%;
+    }
 }

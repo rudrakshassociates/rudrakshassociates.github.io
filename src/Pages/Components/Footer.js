@@ -9,7 +9,7 @@ export default function Footer(){
 
                 <div className="Footer-Tagline">
                     
-                    <h1>TagLine-Text tagline-text</h1>
+                    <h1>Years of Development through our services</h1>
                 </div>
                 <div className="Footer-flex-Content">
                     <div className="Footer-Links">
@@ -56,6 +56,7 @@ export default function Footer(){
                             <li>FAQ</li>
                             <li>Contact Us</li>
                         </ul>
+                        <h2><b>RUDRAKSH</b> ASSOCIATES</h2>
                     </div>
                     
                 </div>

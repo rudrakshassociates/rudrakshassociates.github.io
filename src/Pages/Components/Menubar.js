@@ -1,7 +1,9 @@
 import React from "react"
-import "./styles/dropdown.css"
-export default function Dropdown(){
+import "./styles/menu.css"
+import {FiMenu} from "react-icons/fi"
+export default function Menubar(){
     const [show,setshow]=React.useState(false);
+    const[menubar,setmenubar]=React.useState(false);
     function scrolltoValues(){
         if(window.location.pathname=="/about"){
             window.scrollTo(0,850);
@@ -29,20 +31,19 @@ export default function Dropdown(){
             window.scrollTo(0,400);
         }
     }
+    function menu(){
+        setmenubar(!menubar);
+    }
     window.addEventListener('scroll', changecolor);
     return (
         <div className="dropdown">
-            <button className={show?"dropbtn-nav":"dropbtn"}>About</button>
-            <div className="dropdown-content">
-                <div>
+            <button className={menu?`${show?"dropbtn-nav":"dropbtn"}`:`${show?"dropbtn-nav":"dropbtn"}`} onClick={menu}><FiMenu/></button>
+            <ul>
                     <li onClick={scrolltoStory}>Our Story</li>
                     <li onClick={scrolltoCarrer}>Carrer</li>
-                </div>
-                <div>
                     <li onClick={scrolltoInsights}>Insights</li>
                     <li onClick={scrolltoValues}>Our Values</li>
-                </div>
-            </div>
+            </ul>
 
         </div>
     )

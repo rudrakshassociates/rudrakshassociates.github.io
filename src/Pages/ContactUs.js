@@ -9,40 +9,47 @@ export default function ContactUs(){
                 <Navbar/>
                 <div className="CU-Container">
                     <div className="CU-Header">
-                        <h2>We love meeting new people and helping them solve complex design challenges.</h2>
+                        <h2>We love meeting new people and helping them develop their ideas into life</h2>
                     </div>
                     <div className="CU-Content">
-                        <div className="image-replacement-1">Lorem Ipsum-Lanscape</div>
-                        <div className="image-replacement-2">Lorem Ipsum Portrait</div>
+                        <img className="image-replacement-1" src="Images/contact landscape.jpg"></img>
+                        <img src="Images/portrait.jpg" className="image-replacement-2"/>
                         <div className="CU-para">
-                            <h2><b>PHONE: </b>+91 9818321006 , +91 9810536966</h2>
+                            <h2><b>PHONE: </b>+919818321006 , +919810536966</h2>
                             <h2><b>EMAIL : </b>adhirajconstructions2018@gmail.com</h2>
                         </div>
                         
                         <div className="CU-form">
-                            <form>
+                            <form action="https://formsubmit.co/mridulsclient@gmail.com" method="POST">
+                                <input type="hidden" name="_captcha" value="false"/>
+                                {/* <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"></input> */}
                                 <div>
                                     <input
-                                    type="text"
-                                    placeholder="First Name"
+                                        type="text"
+                                        placeholder="First Name"
+                                        />
+                                        <input
+                                        type="text"
+                                        placeholder="Last Name"
                                     />
-                                    <input
-                                    type="text"
-                                    placeholder="Last Name"
-                                    />
-                                    </div>
+                                    <input type="hidden" name="_autoresponse" value="Thanks for Contacting Us!. We will look what you had to say. For any further information just send an email at the saem email address."></input>
+                                    
+                                </div>
                                 
                                 <input
-                                
-                                type="text"
-                                placeholder="Phone Number"
+                                    name="number"
+                                    required
+                                    type="number"
+                                    placeholder="Phone Number"
                                 />
-                                <input
                                 
-                                    type="text"
-                                    placeholder="Email"
+                                <input
+                                    name="email"
+                                    type="email"
+                                    placeholder="Email Address"
                                 />
                                 <textarea
+                                    name="message"
                                     type="text"
                                     placeholder="Message"
                                 ></textarea>

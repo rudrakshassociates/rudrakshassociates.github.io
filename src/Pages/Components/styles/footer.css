@@ -1,5 +1,4 @@
 .Footer-Container{
-    
     width: 100%;
     padding: 10% 0% 3% 0% ;
     background-color: #543D4B;
@@ -12,6 +11,7 @@
     width: 50%;
 }
 .Footer-Tagline>h1{
+    margin-left: 3%;
     color: #F7D05A;
 }
 .Footer-Links{
@@ -61,11 +61,13 @@
 }
 .Footer-list{
     display: flex;
-    gap: 15rem;
+    gap: 10rem;
    
 }
-.Footer-list>h1{
-    width: 15%;
+.Footer-list>h2{
+    font-family: 'Raleway',sans-serif;
+    font-weight: 200;
+    width: 25%;
     margin-top:0% ;
 }
 #number{
@@ -104,4 +106,66 @@
     border-color: crimson;
     background-color: crimson;
     color: white;
+}
+@media only screen and (max-width:1100px){
+    .Footer-list{
+        gap: 2rem;
+
+    }
+    .Footer-list>h2{
+        font-family: 'Raleway',sans-serif;
+        font-weight: 200;
+        font-size: 20px;
+        width: 10%;
+        margin-top:0% ;
+    }
+    .Footer-bottom-links{
+        gap: 1rem;
+        font-size: 15px;
+        margin:1% 15% ;
+        font-weight: 200;
+    }
+    .Footer-Container>hr{
+        width: 70%;
+    }
+    
+}
+@media only screen and (max-width:600px){
+    .Footer-Tagline>h1{
+        font-size: 28px;
+    }
+    .Footer-Container{
+        width: 100%;
+        padding: 15% 0% 1% 0% ;
+
+    }
+    .Footer-Container>hr{
+        width: 90%;
+    }
+    .Footer-bottom-links{
+        gap: 0.5rem;
+        font-size: 12px;
+        margin-left: 0%;
+        font-weight: 200;
+    }
+    .Link-block>ul>button{
+        font-size: 13px;
+    }
+    .Footer-Links{
+        font-size: 13px;
+        gap: 1rem;
+        justify-content: left;
+
+    }
+    .Footer-list{
+        gap: r5em;
+    }
+    .Footer-list>h2{
+        font-family: 'Raleway',sans-serif;
+        font-weight: 200;
+        font-size: 15px;
+        width: 10%;
+        margin-top:0% ;
+    }
+    
 }

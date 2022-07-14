@@ -5,8 +5,9 @@ export default function Blog(props){
     const Contents=props.Content.map(Info=>{
         return(
             <div className="Blog-Content">
-                <h2>{Info.subtitle}</h2>
-                <p>{Info.para}</p>
+                {Info.image && <img src={Info.image}/>}
+                {Info.subtitle &&<h2>{Info.subtitle}</h2>}
+                {Info.para && <p>{Info.para}</p>}
             </div>
         )
     })

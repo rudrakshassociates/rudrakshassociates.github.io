@@ -132,25 +132,39 @@
     margin-top: 5%;
 }
 
-.Image-Banner{
+.Image-Banner-1{
+    margin: -4% 0%;
     color: white;
     background-color: #543D4B;
-    height:520px;
-}
-.banner-1{
-    margin-left: 5%;
-    width: 60%;
+    width: 100%;
     font-size: 32px;
-    position: absolute;
-    top: 200%;
+    height: 500px;
+    background-image: url("/public/Images/contact-head.jpeg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;    
 }
-.banner-2{
-    margin-left: 5%;
-    width: 50%;
+.Image-Banner-2{
+    margin: -4% 0%;
+    color: white;
+    background-color: #543D4B;
+    width: 100%;
     font-size: 32px;
-    position: absolute;
-    top: 410%;
+    height: 500px;
+    background-image: url("/public/Images/banner1.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
+.banner{
+    text-align: left;
+    padding: 10% 5%;
+}
+.banner-fade{
+    background-color: #543D4B;
+}
+
 .footer{
     position:sticky;
     bottom: 0;
@@ -188,6 +202,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        
     }
     .Title{
         width: 30%;
@@ -243,5 +258,46 @@
         margin: 5% 20%;
     }
 }
-@media only screen and (max-width:320px){
+@media only screen and (max-width:600px){
+    .Home-bg{
+        background-position: bottom;
+
+    }
+    .Title{
+        width: 100%;
+        margin-top: 35%;
+        text-align: center;
+
+    }
+    .Title>h1{
+        width: 100%;
+        height: 10px;
+        font-size: 40px;
+    }
+    .Title>h2{
+        width: 100%;
+        font-size: 20px;
+    }
+    .Title-info{
+        text-align: center;
+        margin-top: 20%;
+    }
+    .Title-info>p{
+        width: 80%;
+    }
+    .Image-Banner-1{
+        font-size: 20px;
+        margin: -7% 0%;
+        height: 300px;
+
+    }
+    .Image-Banner-2{
+        font-size: 20px;
+        margin: -7% 0%;
+        height: 300px;
+    }
+    .banner{
+        padding:20% 5% ;
+    }
+    
 }
