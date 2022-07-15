@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.be919255.css",
-    "main.js": "/static/js/main.b6471c65.js",
+    "main.css": "/static/css/main.d0aa0f12.css",
+    "main.js": "/static/js/main.da58a35c.js",
     "static/media/banner1.jpg": "/static/media/banner1.e5a02198173149890850.jpg",
     "static/media/contact landscape.jpg": "/static/media/contact landscape.ec0468879d60c3af3460.jpg",
     "static/media/Story.png": "/static/media/Story.c7e53fb6334986b4c2b7.png",
     "static/media/portrait.jpg": "/static/media/portrait.bf6811cf649fb5177900.jpg",
     "static/media/vector banner.jpg": "/static/media/vector banner.b28cc9f73b34321ac5be.jpg",
-    "static/media/contact-head.jpeg": "/static/media/contact-head.2b86f5da805775dfd927.jpeg",
+    "static/media/background-head1.jpg": "/static/media/background-head1.ce19d12ab238cc55cb32.jpg",
     "static/media/headerbanner.jpg": "/static/media/headerbanner.039358c49f8a740695b5.jpg",
     "static/media/headerbannertab.jpg": "/static/media/headerbannertab.8fb3470b44d5f2ba36ec.jpg",
     "static/media/header banner all desk.jpg": "/static/media/header banner all desk.025beabfcbbca88e59d8.jpg",
     "static/media/bannerheader all tab.jpg": "/static/media/bannerheader all tab.0cda74d8c5e4313e0a93.jpg",
     "index.html": "/index.html",
-    "main.be919255.css.map": "/static/css/main.be919255.css.map",
-    "main.b6471c65.js.map": "/static/js/main.b6471c65.js.map"
+    "main.d0aa0f12.css.map": "/static/css/main.d0aa0f12.css.map",
+    "main.da58a35c.js.map": "/static/js/main.da58a35c.js.map"
   },
   "entrypoints": [
-    "static/css/main.be919255.css",
-    "static/js/main.b6471c65.js"
+    "static/css/main.d0aa0f12.css",
+    "static/js/main.da58a35c.js"
   ]
 }
