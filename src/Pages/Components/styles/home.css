@@ -134,19 +134,19 @@
 
 .Image-Banner-1{
     margin: -4% 0%;
-    color: white;
+    color: black;
     background-color: #543D4B;
     width: 100%;
     font-size: 32px;
     height: 500px;
-    background-image: url("/public/Images/contact-head.jpeg");
+    background-image: url("/public/Images/background-head1.jpg");
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;    
 }
 .Image-Banner-2{
     margin: -4% 0%;
-    color: white;
+    color:white;
     background-color: #543D4B;
     width: 100%;
     font-size: 32px;
@@ -159,7 +159,7 @@
 }
 .banner{
     text-align: left;
-    padding: 10% 5%;
+    padding: 20% 5%;
 }
 .banner-fade{
     background-color: #543D4B;
@@ -213,6 +213,20 @@
     }
     .Title>h2{
         font-size: 25px;
+    }
+    .Image-Banner-1{
+        height: 700px;
+        background-position: center;
+    }
+    .Image-Banner-2{
+        height: 700px;
+        background-position: center;
+    
+    }
+    .banner{
+        width: 50%;
+        text-align: center;
+        padding: 10% 25%;
     }
     .Title-info{
         width: 70%;

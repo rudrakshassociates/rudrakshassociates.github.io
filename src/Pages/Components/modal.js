@@ -6,7 +6,9 @@ export default function Modal(props){
             <button className="Close"onClick={()=>{
                 props.closeModal(false)
             }}>X</button>
-            <img src={props.image}></img>
+            <div  className="center">
+                <img src={props.image}></img>
+            </div>
         </div>
     )
 }

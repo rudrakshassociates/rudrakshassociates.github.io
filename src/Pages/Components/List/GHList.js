@@ -1,64 +1,64 @@
 const GHList= [
     {
         category:"Electrical",
-        image:"Images/dp.jpg"
+        image:"Images/gallery/image1.jpg"
     },
     {
         category:"",
-        image:"Images/dp.jpg"
+        image:"Images/gallery/image2.jpg"
     },
     {
         category:"",
-        image:"Images/dp.jpg"
+        image:"Images/gallery/image3.jpg"
     },
     {
         category:"Electrical",
-        image:"Images/dp.jpg"
+        image:"Images/gallery/image4.jpg"
     },
 
     {
         category:"",
-        image:"Images/banner.jpg"
+        image:"Images/gallery/image5.jpg"
     },
     {
         category:"",
-        image:"Images/dp.jpg"
+        image:"Images/gallery/image6.jpg"
     },
     {
         category:"",
-        image:"Images/dp.jpg"
+        image:"Images/gallery/image7.jpg"
     },
     {
         category:"",
-        image:"Images/dp.jpg"
+        image:"Images/gallery/image8.jpg"
     },
     {
         category:"",
-        image:"Images/contact-head.jpeg"
+        image:"Images/gallery/image9.jpg"
     },
     {
         category:"",
-        image:"Images/dp.jpg"
+        image:"Images/gallery/image10.jpg"
     },
     {
         category:"",
-        image:"Images/dp.jpg"
+        image:"Images/gallery/image11.jpg"
     },
     {
         category:"",
-        image:"Images/dp.jpg"
+        image:"Images/gallery/image12.jpg"
     },
     {
         category:"",
-        image:"Images/dp.jpg"
+        image:"Images/gallery/image13.jpg"
     },
     {
         category:"Fire Station",
-        image:"Images/dp.jpg"
+        image:"Images/gallery/image14.jpg"
     },
     {
         category:"School",
-        image:"Images/dp.jpg"
+        image:"Images/gallery/image15.jpg"
     }
 
 ]

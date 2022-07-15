@@ -8,7 +8,7 @@
 }
 
 .Footer-Container>hr{
-    width: 50%;
+    width: 80%;
 }
 .Footer-Tagline>h1{
     color: #F7D05A;
@@ -49,22 +49,18 @@
     list-style:none;
     font-weight: 500;
 }
-.Footer-home-link{
-    text-decoration: none;
-    color: white;
-    font-weight:500 ;
-    font-size: 25px;
-}
 .Footer-list{
     display: flex;
     gap: 10rem;
-   
+   justify-content: center;
 }
 .Footer-list>h2{
     font-family: 'Raleway',sans-serif;
-    font-weight: 200;
-    width: 25%;
-    margin-top:0% ;
+    font-weight: 350;
+    width: 20%;
+    font-size: 20px;
+    margin-top:1% ;
+    color: white;
 }
 #number{
     margin-left: 15%;
@@ -87,9 +83,6 @@
 .Footer-list>ul>li:hover{
     color: #F7D05A;
 }
-.Footer-home-link:hover{
-    color: lightgray;
-}
 .Link-block>ul>h3:hover{
     color: #FB6F6F;
 }
@@ -103,9 +96,10 @@
     background-color: crimson;
     color: white;
 }
-@media only screen and (max-width:1100px){
+@media only screen and (min-width:1100px){
     .Footer-list{
         gap: 2rem;
+        margin-left: 15%;
 
     }
     .Footer-list>h2{
@@ -122,7 +116,7 @@
         font-weight: 200;
     }
     .Footer-Container>hr{
-        width: 70%;
+        width: 50%;
     }
     
 }

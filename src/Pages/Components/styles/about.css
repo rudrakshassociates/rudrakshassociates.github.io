@@ -209,6 +209,14 @@
         height: 500px;
 
     }
+    .about-ending>p{
+        padding: 10% 25%;
+        width: 50%;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        font-size: 25px;
+    }
 }
 @media only screen and (max-width:600px){
     .about-Header>h1{
