@@ -12,8 +12,8 @@ export default function ContactUs(){
                         <h2>We love meeting new people and helping them develop their ideas into life</h2>
                     </div>
                     <div className="CU-Content">
-                        <img className="image-replacement-1" src="Images/contact landscape.jpg"></img>
-                        <img src="Images/portrait.jpg" className="image-replacement-2"/>
+                        <div className="image-replacement-1" ></div>
+                        <div  className="image-replacement-2"/>
                         <div className="CU-para">
                             <h2><b>PHONE: </b>+919818321006 , +919810536966</h2>
                             <h2><b>EMAIL : </b>adhirajconstructions2018@gmail.com</h2>

@@ -6,7 +6,7 @@
     background-color: #543D4B;
     /* margin-top: 6%; */
     width: 100%;
-    height: 1200px;
+    height: 1100px;
     overflow: hidden;
 }
 .Home-bg{
@@ -21,7 +21,7 @@
     font-family: 'Raleway',sans-serif;
     letter-spacing: 1px;
     color: white;
-    margin-top: 20%;
+    margin-top: 15%;
     text-align: center;
 }
 .Title>h1{
@@ -29,7 +29,7 @@
     font-weight: 400;
     color: #F7D05A;
     margin-left: 1.5%;
-    font-size: 40px;
+    font-size: 38px;
 }
 .buttons{
     margin-top: 15%;
@@ -37,7 +37,7 @@
     display: flex;
     gap: 10%;
 }.Title>h2{
-    font-size: 22px;
+    font-size: 20px;
 }
 .Title-info{
     margin-top: 10%;
@@ -46,7 +46,7 @@
 }
 .Title-info>h1{
     font-weight: bold;
-    font-size: 30px;
+    font-size: 28px;
 }
 .Title-info>p{
     margin-left:10%;
@@ -185,9 +185,8 @@
     opacity: 0.7;
 }
 .downbutton{
-    position: absolute;
-    top: 1000px;
-    left: 50%;
+    justify-content: center;
+    margin-top: 30%;
     text-align: center;
     font-size: 40px;
     font-family: 'Raleway',sans-serif;
@@ -205,9 +204,9 @@
         
     }
     .Title{
-        width: 30%;
-        margin-left: 15%;
-        margin-top: 15%;
+        width: 60%;
+        justify-content: center;
+        margin-top: 12%;
     }
     .Title>h1{
         font-size: 50px;
@@ -256,6 +255,9 @@
     .buttons{
         justify-content: left;
         margin: 5% 20%;
+    }
+    .downbutton{
+        margin-top: 12%;
     }
 }
 @media only screen and (max-width:600px){

@@ -16,7 +16,7 @@
 }
 .our-Story{
     display: flex;
-    gap: 10%;
+    gap: 5%;
     margin-top: 10%;
 }
 .our-Story>div{
@@ -138,12 +138,21 @@
     color: #ffffff;
     font-size: 25px;
 }
-.Story-Image>img{
-    margin-left: -40%;
-    width: 150%;
+.Story-Image{
+    background-image: url("/public/Images/Story.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
 }
-.Carrer-Image>img{
-    width: 150%;
+.Carrer-Image{
+    background-image: url("/public/Images/Story.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
 }
 @media only screen and (min-width:1100px){
     .about-Container{
@@ -170,9 +179,9 @@
     .our-Story>div>p{
         width: 80%;
     }
-    .Story-Image>img{
-        padding-left: 35%;
+    .Story-Image{
         width: 90%;
+        height: 500px;
     }
     .about-values{
         justify-content: center;
@@ -195,9 +204,10 @@
         margin-top:8%;
         margin-left:20% ;
     }
-    .Carrer-Image>img{
-        padding-right: 35%;
+    .Carrer-Image{
         width: 90%;
+        height: 500px;
+
     }
 }
 @media only screen and (max-width:600px){

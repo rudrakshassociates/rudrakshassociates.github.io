@@ -2,9 +2,9 @@
     position: relative;
     overflow-y: scroll;
     max-height: 620px;
-    width: 850px;
+    width: 820px;
     z-index: 2;
-    margin: 5% 10%;
+    margin: 5%;
     display: grid;
     gap: 0.5rem;
     grid-template-columns: repeat(auto-fill,minmax(350px ,1fr));

@@ -1,17 +1,16 @@
 .Footer-Container{
     width: 100%;
-    padding: 10% 0% 3% 0% ;
+    padding: 10% 0% 0% 0% ;
     background-color: #543D4B;
     color: #ffffff;
     text-align: center;
-    -webkit-font-smoothing: antialiased;
+    justify-content: center;
 }
 
 .Footer-Container>hr{
     width: 50%;
 }
 .Footer-Tagline>h1{
-    margin-left: 3%;
     color: #F7D05A;
 }
 .Footer-Links{
@@ -30,7 +29,6 @@
 }
 .Link-block>ul>h2{
     text-align: center;
-    margin-left: 1%;
 }
 .Link-block>ul>button{
     font-size: 15px;
@@ -49,11 +47,9 @@
     display: flex;
     gap: 1rem;
     list-style:none;
-    margin-left: 26%;
     font-weight: 500;
 }
 .Footer-home-link{
-    margin-left: 5%;
     text-decoration: none;
     color: white;
     font-weight:500 ;
@@ -71,7 +67,7 @@
     margin-top:0% ;
 }
 #number{
-    margin-left: 20%;
+    margin-left: 15%;
     background-color: #BD2BE2;
     border-color: #BD2BE2;
     color: white;
@@ -80,7 +76,7 @@
 
 #contact{
     font-weight: bold;
-    margin-left :25%;
+    margin-left :22%;
     margin-top: 5%;
 }
 

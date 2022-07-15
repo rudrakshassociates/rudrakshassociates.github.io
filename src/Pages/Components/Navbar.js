@@ -27,7 +27,7 @@ export default function Navbar(){
     }
     function scrolltoServices(){
         if(window.location.pathname=="/"){
-            window.scrollTo(0,990);
+            window.scrollTo(0,890);
         }else{
             navigate({
                 pathname:'/'

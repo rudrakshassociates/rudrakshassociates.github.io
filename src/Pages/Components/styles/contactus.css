@@ -31,6 +31,10 @@
     top:30%;
     left: 20%;
     background-color: #F3F3F3;
+    background-image: url("/public/Images/contact\ landscape.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .image-replacement-2{
     position: absolute;
@@ -40,6 +44,11 @@
     top:50%;
     left: 10%;
     background-color: lightgray;
+    background-image: url("/public/Images/portrait.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 .CU-form{
     margin: 2% 15%;

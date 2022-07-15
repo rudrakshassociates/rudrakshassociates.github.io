@@ -11,7 +11,7 @@ import Services from "./Components/services.js"
 export default function Home(){
 
     function downslide(){
-        window.scrollTo(0,990);
+        window.scrollTo(0,890);
     }
     
     return(

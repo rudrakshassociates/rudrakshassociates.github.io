@@ -26,9 +26,7 @@ export default function FAQ(){
                         <h1>Creating, Developing and Evolving</h1>
                         <p><b>Rudraksh Associates</b> was created by <b>Mr. Vishal Sharma</b>, the current <b>CEO</b> of the same in 2003. Initially we only provided services for Lift and ET Installation.But over time , we have expanded into providing many other services as well.All included in the service section.</p>  
                     </div>
-                    <div className="Story-Image">
-                        <img src="Images/story.png"/>
-                    </div>
+                    <div className="Story-Image"></div>
                 </div>
                 <div className="about-values">
                     <div>
@@ -87,7 +85,6 @@ export default function FAQ(){
                 <div className="our-Story">
                        
                         <div className="Carrer-Image">
-                        <img src="Images/story.png"/>
                         </div>
                         <div>
                             <h3>Carrer</h3>

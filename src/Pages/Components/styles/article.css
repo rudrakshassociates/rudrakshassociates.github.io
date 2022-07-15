@@ -48,9 +48,12 @@
         border-radius: 10px;
     }
     .Blog-Content{
-        padding: 5% 2% 1%;
-        margin: 0% 20%;
+        padding: 0.5% 2% 1%;
+        margin: 0% 25%;
         background-color: white;
+    }.Blog-Content>h2{
+        line-height: 15px;
+
     }
 }
 @media only screen and (max-width:320px){
