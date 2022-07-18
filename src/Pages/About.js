@@ -116,7 +116,8 @@ export default function FAQ(){
                     </div>
                 </div>
                 <div className="about-ending">
-                        <p>“Nothing in this world is more simple and more cheap than making cities that provide better for people.”     – Jan Gehl</p>
+                <p id="end-1">“Nothing in this world is more simple and more cheap than making cities that provide better for people.”     – Jan Gehl</p>
+                <p id="end-2">“Nothing in this world is more simple and more cheap than making cities that provide better for people.”     – Jan Gehl</p>
                 </div>
             </div>
             <div className="footer">

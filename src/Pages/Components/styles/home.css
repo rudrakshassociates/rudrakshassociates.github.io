@@ -5,8 +5,9 @@
 .Home-bg{
     background-color: #543D4B;
     /* margin-top: 6%; */
-    width: 100%;
-    height: 1100px;
+    width: 100vw;
+    height: 115vh;
+    max-width: 100vw;
     overflow: hidden;
 }
 .Home-bg{
@@ -19,17 +20,17 @@
 
 .Title{
     font-family: 'Raleway',sans-serif;
-    letter-spacing: 1px;
+    letter-spacing: 0.1em;
     color: white;
     margin-top: 15%;
     text-align: center;
 }
 .Title>h1{
-    line-height: 5px;
+    line-height: 0.5rem;
     font-weight: 400;
     color: #F7D05A;
     margin-left: 1.5%;
-    font-size: 38px;
+    font-size: 2.5rem;
 }
 .buttons{
     margin-top: 15%;
@@ -37,7 +38,7 @@
     display: flex;
     gap: 10%;
 }.Title>h2{
-    font-size: 20px;
+    font-size: 1.3rem;
 }
 .Title-info{
     margin-top: 10%;
@@ -46,19 +47,19 @@
 }
 .Title-info>h1{
     font-weight: bold;
-    font-size: 28px;
+    font-size: 1.5rem;
 }
 .Title-info>p{
     margin-left:10%;
     width: 80%;
-    font-size: 18px;
+    font-size: 1.1rem;
 }
 .GetinTouch{
     color: white;
     font-weight: 600;
-    border: 10px solid #FB6F77;
-    border-radius: 10px;
-    font-size: 18px;
+    border: 0.5rem solid #FB6F77;
+    border-radius: 0.5em;
+    font-size: 1.1rem;
     background-color: #FB6F77;
 }
 .GetinTouch:hover{
@@ -67,33 +68,17 @@
     border-color: white;
 }
 .Info-para{
-    font-size: 20px;
+    font-size: 1rem;
 }
-.CEO-Container{
-    border-radius: 5px;
-    display: flex;
-    gap: 20%;
-    padding: 5%;
-    padding-bottom: 2%;
-    background-color: #e7cbf6e1;
-}
-.CEO-pic>img{
-    border-radius: 50%;
-    width: 300px;
-}
-.CEO-Info>h3{font-size: 25px;}
-.designation{font-weight: 400;}
-
-
 .News-Container{
     padding:5% 2%;
-    border-radius: 5px;
+    border-radius: 0.2em;
     padding-bottom: 12%;
 }
 .slider-card>img{
-    border-radius: 5px;
-    width: 200px;
-    height:200px  ;
+    border-radius: 0.5em;
+    width: 200vw;
+    height:200vh  ;
     object-fit: cover;
 }
 .Slider-card{
@@ -112,17 +97,20 @@
         #BD2BE2 53%,
         #BD2BE2 100%
     );
-}.News-Head{
-    display: flex;
-    gap: 70%;
+}
+.News-Head{
+    display: block;
 }
 .News-Head>h2{
-    font-size:32px;
+    color: #FB6F77;
+    font-size:2rem;
+    text-align: center;
+    height: 1rem;
 }
-.News-Head>button{
-    align-self: center;
-    width: 8%;
-    height: 25px;
+.News-Head>hr{
+    width: 15vw;
+    border:0.1rem solid #543D4B ;
+    background-color: #543D4B;
 }
 .News-Content{
     margin-left: 2%;
@@ -188,20 +176,37 @@
     justify-content: center;
     margin-top: 30%;
     text-align: center;
-    font-size: 40px;
+    font-size: 2rem;
     font-family: 'Raleway',sans-serif;
     color: white;
 }
 .downbutton:hover{
     color: #ffca2b;
 }
-@media only screen and (min-width:1100px){
+@media only screen and (min-width:600px){
+    
+}
+@media only screen and (min-width:768px){
+
+}
+@media only screen and (min-width:992px){
+
+}
+@media only screen and (min-width:1200px){
     .Home-bg{
         background-image: url("/public/Images/headerbanner.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         
+    }
+    .News-Highlight{
+        width: 70vw;
+        margin-left: 12%;
+    }
+    .News-Head{
+        width: 70vw;
+        margin-left: 15%;
     }
     .Title{
         width: 60%;
@@ -215,16 +220,16 @@
         font-size: 25px;
     }
     .Image-Banner-1{
-        height: 700px;
-        background-position: center;
+        height: 50vh;
+        background-position:center;
     }
     .Image-Banner-2{
-        height: 700px;
-        background-position: center;
-    
+        height: 50vh;
+        background-position: top;
     }
+    
     .banner{
-        width: 50%;
+        width: 50vw;
         text-align: center;
         padding: 10% 25%;
     }
@@ -237,34 +242,30 @@
     .Title-info>p{
         margin-left:-12% ;
         text-align: center;
-        width: 40%;
+        width: 40vw;
     }
     .News-Highlight{
         text-align: center;
     }
     .News-Container{
+        height: 60vh;
         background:linear-gradient(
             to bottom,
             #ffffff 0%,
-            #ffffff 53%,
-            #BD2BE2 53%,
+            #ffffff 65%,
+            #BD2BE2 65%,
             #BD2BE2 100%
         );
-    }.News-Head{
-        display: flex;
-        gap: 70%;
     }
-    .News-Head>h2{
-        font-size:32px;
+    .News-Head{
+        margin-top: 5%;
     }
-    .News-Head>button{
-        align-self: center;
-        width: 8%;
-        height: 25px;
+    .News-Head>hr{
+        width: 10vw;
     }
     .News-Content{
-        margin: 0% 18%;
-        width: 63%;
+        margin: 1% 25%;
+        width: 50vw;
     }
     .buttons{
         justify-content: left;

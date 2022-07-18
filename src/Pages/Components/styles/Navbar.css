@@ -1,72 +1,80 @@
 .Navbar-container{
-    width: 100%;
+    width: 100vw;
     opacity: 95%;
-    height: 55px;
+    height: 5vh;
     background-color: white;
     /* background-color: transparent; */
     display: flex;
-    gap:25%;
+    gap:30%;
     align-items: center;
     top:0;
     z-index: 99;
     position: fixed;
-    letter-spacing: 0.6px;
+    letter-spacing: 0.08rem;
     font-family: 'Raleway', sans-serif;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    box-shadow: 0 0.2em 0.1em 0 rgba(0,0,0,.2);
 }
 
 .Nav{
-    width: 100%;
-    height: 55px;
+    width: 100vw;
+    height: 5vh;
     background-color: transparent;
     display: flex;
-    gap:25%;
+    gap:30%;
     align-items: center;
     top:0;
     z-index: 99;
     position: fixed;
     font-weight: 400;
-    letter-spacing: 0.6px;
+    letter-spacing: 0.08rem;
     font-family: 'Raleway', sans-serif;
 }
 .Nav>h1{
-    font-size: 20px;
-    width:20%; 
-    margin-left:2%;
+    font-size: 1em;
+    width:15vw; 
+    text-align: center;
 }
-.about-Navbar>h1{
+.Navbar-container>h1{
+    font-size: 1em;
+    width:15vw; 
+    text-align: center;
+}
+/* .about-Navbar>h1{
         width: 20%;
         font-size: 20px;
         margin-left:2%;
+} */
+.home-link{
+    font-family: 'Raleway',sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 400;
 }
 .home-link-nav{
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
-    /* color: white; */
     color: #BD2BE2;
-    font-size: 18px;
+    font-size: 1rem;
     text-align: center;
     font-weight: 400;
 }
 .home-link-nav:hover{
     color: #E948AD;
 }
-.Navbar-container>h1{
-    width: 20%;
-    font-size: 20px;
-    margin-left:2%;
-}
-.home-link{
-    font-family: 'Raleway',sans-serif;
-    text-decoration: none;
-    /* color: white; */
-    color: white;
-    font-size: 18px;
-    text-align: center;
-    font-weight: 400;
-}
 .home-link:hover{
     color: lightgray;
+}
+.Navbar-list{
+    /* color: white; */
+    color: white;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
 }
 .Navbar-list-nav{
     /* color: white; */
@@ -75,23 +83,14 @@
     text-align: center;
     display: flex;
     gap: 0.2rem;
-    font-size: 14px;
+    font-size: 0.9rem;
     font-weight: 500;
 }
 .Navbar-list-nav:hover{
     color: #E948AD;
 }
 
-.Navbar-list{
-    /* color: white; */
-    color: white;
-    align-items: center;
-    text-align: center;
-    display: flex;
-    gap: 0.5rem;
-    font-size: 14px;
-    font-weight: 500;
-}
+
 .links{
     list-style: none;
     display: flex;
@@ -110,10 +109,14 @@
     color: white;
 }
 .N-socials{
-    font-size: 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
 }
 .socials{
-    font-size: 18px;
+    font-size: 1.1rem;
     font-weight: 600;
     list-style: none;
     display: flex;
@@ -130,10 +133,48 @@
     display:none;
 }
 .menunot-nav{
-        display: none;
+    display: none;
+}
+/* Iphone SE 2nd gen iOs=> Landscape */
+@media only screen and (min-width:600px){
+    .home-link{
+        text-align: center;
+        width: 10vw;
     }
-
-@media only screen and (min-width:1100px){
+    .home-link-nav{
+        text-align: center;
+        width: 30vw;
+    }
+    .Nav{
+        height: 12vh;
+        width: 100vw;
+        gap: 12%;
+    }
+    .Navbar-container{
+        height: 12vh;
+        width: 100vw;
+        gap: 12%;
+    }
+    .Navbar-list-nav{
+        font-size: 0.8rem;
+    }
+    .Navbar-list{
+        font-size: 0.8rem;
+    }
+    .socials{
+        font-size: 0.5rem;
+    }
+    .N-socials{
+        font-size: 0.5rem;
+    }
+}
+@media only screen and (min-width:992px){
+    .Nav{
+        width: 100vw;
+        gap: 36%;
+    }
+}
+@media only screen and (min-width:1200px){
     .Nav{
         gap: 15%;
     }
@@ -155,7 +196,7 @@
 }
 @media only screen and (max-width:600px){
     .Nav{
-        width: 100%;
+        width: 100vw;
         gap: 80%;
     }
     .Nav>h1{

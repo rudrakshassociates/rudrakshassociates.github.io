@@ -1,6 +1,6 @@
 .Footer-Container{
-    width: 100%;
-    padding: 10% 0% 0% 0% ;
+    width: 100vw;
+    padding-top: 10%;
     background-color: #543D4B;
     color: #ffffff;
     text-align: center;
@@ -8,19 +8,19 @@
 }
 
 .Footer-Container>hr{
-    width: 80%;
+    width: 80vw;
 }
 .Footer-Tagline>h1{
     color: #F7D05A;
 }
 .Footer-Links{
-    margin-top: 3%;
-    margin-bottom: 8%;
+    height: 20em;
     display: flex;
     gap: 4rem;
     justify-content: center;
 }
 .Link-block{
+    height: 15rem;
     display: block;
     align-items: center;
 }
@@ -30,24 +30,30 @@
 .Link-block>ul>h2{
     text-align: center;
 }
-.Link-block>ul>button{
-    font-size: 15px;
-    display: block;
-    margin-top: 2%;
-    border-radius: 10px;
-    border: 10px solid white;
+.Link-block>ul>div>button{
+    font-size: 1rem;
+    margin: 2% 0%;
+    border-radius: 0.5rem;
+    border: 0.6rem solid white;
     background-color: white;
     color: #430082;
 }
 .Link-block>ul>li{
-    margin:10% 0%;
+    height: 2rem;
     list-style: none;
 }
 .Footer-bottom-links{
     display: flex;
     gap: 1rem;
+    font-size:1rem ;
+    height: 3vh;
     list-style:none;
     font-weight: 500;
+}
+.contact-button{
+    width: 30vw;
+    height: 10vh;
+
 }
 .Footer-list{
     display: flex;
@@ -56,14 +62,13 @@
 }
 .Footer-list>h2{
     font-family: 'Raleway',sans-serif;
-    font-weight: 350;
-    width: 20%;
-    font-size: 20px;
-    margin-top:1% ;
+    font-weight: 400;
+    width: 20vw;
+    font-size: 1rem;
+    align-items: center;
     color: white;
 }
 #number{
-    margin-left: 15%;
     background-color: #BD2BE2;
     border-color: #BD2BE2;
     color: white;
@@ -72,8 +77,7 @@
 
 #contact{
     font-weight: bold;
-    margin-left :22%;
-    margin-top: 5%;
+
 }
 
 /* hover */
@@ -96,7 +100,16 @@
     background-color: crimson;
     color: white;
 }
-@media only screen and (min-width:1100px){
+@media only screen and (min-width:600px){
+    
+}
+@media only screen and (min-width:768px){
+
+}
+@media only screen and (min-width:992px){
+
+}
+@media only screen and (min-width:1200px){
     .Footer-list{
         gap: 2rem;
         margin-left: 15%;

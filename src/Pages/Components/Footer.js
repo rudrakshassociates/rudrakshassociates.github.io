@@ -29,8 +29,11 @@ export default function Footer(){
                                 <h3>About</h3>
                                 <hr></hr>
                                 <h2>Wanna work with us?</h2>
-                                <button id="number">+91 9875416358</button>
-                                <button id="contact">Get in Touch</button>
+                                <div className="contact-button">
+                                    <button id="number">+91 9875416358</button>
+                                    <button id="contact">Get in Touch</button>
+                                </div>
+                                
                             </ul>
                         </div>
 

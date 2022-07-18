@@ -13,6 +13,7 @@ export default function News(){
                 </div>
                 <div className="News-Head">
                     <h2>Latest News</h2>
+                    <hr></hr>
                 </div>
                 <div className="News-Content">
                     <div className="Slider-down">
