@@ -4,6 +4,7 @@ import Footer from "./Components/Footer"
 import Nav from "./Components/WhiteBGNav.js"
 import "./Components/styles/about.css"
 export default function FAQ(){
+    document.title="Rudraksh Associates | About";
     const navigate=useNavigate();
     function Name(event){
         const{className}=event.target

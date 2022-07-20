@@ -4,6 +4,8 @@ import Footer from "./Components/Footer"
 import Navbar from "./Components/Navbar.js"
 import "./Components/styles/ourwork.css"
 export default function Projects(){
+    document.title="Rudraksh Associates | Works";
+
     const navigate=useNavigate();
     function Name(event){
         const{className}=event.target

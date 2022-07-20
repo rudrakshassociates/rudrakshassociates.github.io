@@ -9,6 +9,7 @@ import News from "./Components/News.js"
 import Services from "./Components/services.js"
 
 export default function Home(){
+    document.title="Rudraksh Associates | Home";
 
     function downslide(){
         window.scrollTo(0,890);

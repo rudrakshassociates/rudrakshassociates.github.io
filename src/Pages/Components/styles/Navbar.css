@@ -5,7 +5,7 @@
     background-color: white;
     /* background-color: transparent; */
     display: flex;
-    gap:30%;
+    /* gap:30%; */
     align-items: center;
     top:0;
     z-index: 99;
@@ -20,7 +20,7 @@
     height: 5vh;
     background-color: transparent;
     display: flex;
-    gap:30%;
+    /* gap:30%; */
     align-items: center;
     top:0;
     z-index: 99;
@@ -68,6 +68,8 @@
 }
 .Navbar-list{
     /* color: white; */
+    position: absolute;
+    right: 2em;
     color: white;
     align-items: center;
     text-align: center;
@@ -78,6 +80,8 @@
 }
 .Navbar-list-nav{
     /* color: white; */
+    position: absolute;
+    right: 2em;
     color: #BD2BE2;
     align-items: center;
     text-align: center;
@@ -108,7 +112,7 @@
     /* color: white; */
     color: white;
 }
-.N-socials{
+.N-socials-not-nav{
     font-size: 1.1rem;
     font-weight: 600;
     list-style: none;
@@ -132,11 +136,20 @@
 .menu{
     display:none;
 }
+.menubar-nav{
+    display: none;
+}
+.menubar-nav>ul{
+    display: none;
+}
+.menunot-nav>ul{
+    display: none;
+}
 .menunot-nav{
     display: none;
 }
 /* Iphone SE 2nd gen iOs=> Landscape */
-@media only screen and (min-width:600px){
+@media only screen and (max-width:700px){
     .home-link{
         text-align: center;
         width: 10vw;
@@ -146,12 +159,12 @@
         width: 30vw;
     }
     .Nav{
-        height: 12vh;
+        height: 5vh;
         width: 100vw;
         gap: 12%;
     }
     .Navbar-container{
-        height: 12vh;
+        height: 5vh;
         width: 100vw;
         gap: 12%;
     }
@@ -171,21 +184,13 @@
 @media only screen and (min-width:992px){
     .Nav{
         width: 100vw;
-        gap: 36%;
     }
 }
 @media only screen and (min-width:1200px){
-    .Nav{
-        gap: 15%;
-    }
     .Nav>h1{
         font-size: 20px;
         width:20%; 
         margin-left:20%;
-    }
-    
-    .Navbar-container{
-        gap: 15%;
     }
    
     .Navbar-container>h1{
@@ -197,7 +202,6 @@
 @media only screen and (max-width:600px){
     .Nav{
         width: 100vw;
-        gap: 80%;
     }
     .Nav>h1{
         font-size: 10px;
@@ -211,7 +215,6 @@
 
     .Navbar-container{
         width: 100%;
-        gap: 80%;
     }
     .Navbar-container>h1{
         font-size: 10px;
@@ -231,15 +234,15 @@
         display: none;
     }
     .menu{
-        width: 10%;
+        width: 10vw;
         display: block;
-        margin-top: 50%;
+        margin-top: 30%;
         justify-content: center;
     }
     .menu-nav{
-        width: 10%;
+        width: 10vw;
         display: block;
-        margin-top: 50%;
+        margin-top: 30%;
         justify-content: center;
     }
     .Navbar-list>ul{
@@ -254,30 +257,18 @@
     .menubar-nav{
         position: absolute;
         z-index: 98;
-        top: 85%;
-        left: 75%;
-        margin-top: 2%;
         display: block;
-        width: 25%;
+        width: 100vw;
         background-color: blueviolet;
-        height:1000px;
-    }
-    .menubar-nav>ul{
-        text-align: left;
-        width: 40%;
-        list-style: none;
-    }
-    .menubar-nav>ul>li{
-        margin-top: 40%;
-        margin-left: -30%;
+        height:100vh;
     }
     .menubar-nav>ul>li:active{
         padding: 5%;
         background-color: #E948AD;
     }
     .navbar-link{
-        width: 100%;
-        font-size: 25px;
+        width: 100vw;
+        font-size: 1.6rem;
     }
 
 }

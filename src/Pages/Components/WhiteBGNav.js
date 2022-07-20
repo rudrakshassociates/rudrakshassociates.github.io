@@ -59,7 +59,7 @@ export default function WhiteBGNav(){
                         <li><Link to="/contactus" className={show?"N-navbar-link-nav":"N-navbar-link"}>Contact</Link></li>
                         <li><Link to="/about" className={show?"N-navbar-link-nav":"N-navbar-link"}><NavDropdown/></Link></li>
                     </ul>
-                    <ul className={show?"socials":"N-socials"}>
+                    <ul className={show?"socials-nav":"N-socials"}>
                         <li onClick={Linkedin}><FaLinkedinIn/></li>
                         <li onClick={Twitter}><FaTwitter/></li>
                     </ul>

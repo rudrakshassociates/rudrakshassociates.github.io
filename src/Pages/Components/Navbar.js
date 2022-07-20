@@ -58,7 +58,6 @@ export default function Navbar(){
                     <h1 className={show?"menu-nav":"menu"} onClick={shownavbar}><FiMenu/></h1>
                     <div className={menu?"menubar-nav":"menunot-nav"}>
                         <ul>
-                            {console.log(menu)}
                             <li onClick={scrolltoServices} className="navbar-link">Services</li>
                             <li><Link to="/works" className="navbar-link">Our Work</Link></li>    
                             <li><Link to="/contactus" className="navbar-link">Contact</Link></li>
@@ -74,7 +73,7 @@ export default function Navbar(){
                         <li><Link to="/contactus" className={show?"navbar-link-nav":"navbar-link"}>Contact</Link></li>
                         <li><Link to="/about" className={show?"navbar-link-nav":"navbar-link"}><Dropdown/></Link></li>
                     </ul>
-                    <ul className={show?"socials":"N-socials"}>
+                    <ul className={show?"socials":"N-socials-not-nav"}>
                         <li onClick={Linkedin}><FaLinkedinIn/></li>
                         <li onClick={Twitter}><FaTwitter/></li>
                     </ul>

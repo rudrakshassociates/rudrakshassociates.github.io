@@ -3,6 +3,8 @@ import Footer from "./Components/Footer"
 import Navbar from "./Components/Navbar"
 import "./Components/styles/contactus.css"
 export default function ContactUs(){
+    document.title="Rudraksh Associates | Contact Us";
+
     return(
         <div onLoad={window.scrollTo(0,0)}>
             <div className="main">
