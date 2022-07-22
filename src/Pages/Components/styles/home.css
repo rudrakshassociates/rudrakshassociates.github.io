@@ -278,29 +278,31 @@
 @media only screen and (max-width:600px){
     .Home-bg{
         background-position: bottom;
-
+        width: 100vw;
+        height: 120vh;
     }
     .Title{
-        width: 100%;
-        margin-top: 35%;
+        width: 100vw;
+        margin-top: 30%;
         text-align: center;
 
     }
     .Title>h1{
-        width: 100%;
+        width: 100vw;
         height: 10px;
-        font-size: 40px;
+        font-size: 2rem;
     }
     .Title>h2{
-        width: 100%;
-        font-size: 20px;
+        width: 100vw;
+        font-size: 1rem;
     }
     .Title-info{
         text-align: center;
         margin-top: 20%;
     }
     .Title-info>p{
-        width: 80%;
+        font-size: 1rem;
+        width: 80vw;
     }
     .Image-Banner-1{
         font-size: 20px;
@@ -315,6 +317,9 @@
     }
     .banner{
         padding:20% 5% ;
+    }
+    .downbutton{
+        display: none;
     }
     
 }

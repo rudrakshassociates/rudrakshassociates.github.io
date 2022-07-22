@@ -101,27 +101,30 @@
 }
 @media only screen and (max-width:600px){
     .our-services{
-        width: 80%;
-        height: 750px;
-        top: 100%;
+        width: 80vw;
+        height: 120vh;
+        top: 100vh;
+        margin-top: 5%;
+        margin-left: 0%;
     }
     .service-container{
-        height: 750px;
+        height: 120vh;
         padding: 2% 5%;
     }
     .service-box{
-        width: 90%;
-        margin: 2% 5%;
-        max-height: 600px;
+        width: 80vw;
+        margin: 2% 1%;
+        overflow-x: hidden;
+        max-height: 100vh;
         gap: 2rem;
         row-gap: 3rem;
     }
     .service-info>hr{
-        width: 30%;
+        width: 30vw;
     }
     .service-card-box{
-        width: 50%;
-        height: 220px;
+        width: 50vw;
+        height: 40vh;
         margin: 0% 25%;
     }
 }

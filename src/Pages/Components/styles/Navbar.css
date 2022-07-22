@@ -236,7 +236,7 @@
     .menu{
         width: 10vw;
         display: block;
-        margin-top: 30%;
+        margin-top: 50%;
         justify-content: center;
     }
     .menu-nav{
@@ -261,10 +261,6 @@
         width: 100vw;
         background-color: blueviolet;
         height:100vh;
-    }
-    .menubar-nav>ul>li:active{
-        padding: 5%;
-        background-color: #E948AD;
     }
     .navbar-link{
         width: 100vw;
