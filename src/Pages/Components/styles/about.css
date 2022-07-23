@@ -212,6 +212,10 @@
     .about-values>div{
         width: 15%;
     }
+    .about-values>div>img{
+        width: 8vw;
+        justify-content: center;
+    }
     .about-articles>div{
         display: flex;
         gap: 2%;
@@ -223,9 +227,17 @@
         font-size: 32px;
     }
     .about-Insights>div{
-        width: 60%;
+        width: 90vw;
         margin-top:8%;
-        margin-left:20% ;
+        margin-left: 0%;
+        justify-content: center;
+    }
+    .about-Insights>div>div{
+        width: 20vw;
+        height: 50vh;
+    }
+    .about-Insights>div>div>img{
+        width: 20vw;
     }
     .Carrer-Image{
         width: 90%;

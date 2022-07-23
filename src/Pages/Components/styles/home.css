@@ -234,15 +234,19 @@
         padding: 10% 25%;
     }
     .Title-info{
-        width: 70%;
+        width: 50%;
         text-align: left;
-        margin-left: 25%;
+        margin-left: 10%;
         margin-top: 5%;
     }
-    .Title-info>p{
-        margin-left:-12% ;
-        text-align: center;
+    .Title-info>h1{
+        text-align: center ;
         width: 40vw;
+        margin-left: 0%;
+    }
+    .Title-info>p{
+        margin-left:0% ;
+        text-align: center;
     }
     .News-Highlight{
         text-align: center;

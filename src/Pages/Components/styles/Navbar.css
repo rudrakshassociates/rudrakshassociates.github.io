@@ -190,13 +190,24 @@
     .Nav>h1{
         font-size: 20px;
         width:20%; 
-        margin-left:20%;
+        margin-left:15%;
     }
-   
+    .Nav{
+        gap: 25%;
+    }
+    .Navbar-container{
+        gap: 25%;
+    }
     .Navbar-container>h1{
         font-size: 20px;
         width:20%; 
-        margin-left:20%;
+        margin-left:15%;
+    }
+    .Navbar-list{
+        position: relative;
+    }
+    .Navbar-list-nav{
+        position: relative;
     }
 }
 @media only screen and (max-width:600px){
