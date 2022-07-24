@@ -134,8 +134,10 @@
     color: #E948AD;
 }
 .menu{
-    display:none;
+   position: absolute;
+   right: 1rem;
 }
+/*
 .menubar-nav{
     display: none;
 }
@@ -145,8 +147,11 @@
 .menunot-nav>ul{
     display: none;
 }
+*/
 .menunot-nav{
-    display: none;
+    color: #E948AD;
+    position: absolute;
+    right: 1rem;
 }
 /* Iphone SE 2nd gen iOs=> Landscape */
 @media only screen and (max-width:700px){

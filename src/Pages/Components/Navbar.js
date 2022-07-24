@@ -4,6 +4,8 @@ import "./styles/Navbar.css"
 import Dropdown from "./Dropdown";
 import { MdLaptopWindows} from "react-icons/md";
 import { FaTwitter,FaLinkedinIn} from "react-icons/fa";
+import {AiOutlineClose} from "react-icons/ai";
+
 import {FiMenu} from "react-icons/fi"
 import Menubar from "./Menubar";
 export default function Navbar(){
@@ -55,9 +57,9 @@ export default function Navbar(){
             <div className={show?"Navbar-container":"Nav"}>
                 <h1><Link to="/" className={show?"home-link-nav":"home-link"}><b>RUDRAKSH</b> ASSOCIATES</Link></h1>
                 <div className={show?"Navbar-list-nav":"Navbar-list"}>
-                    <h1 className={show?"menu-nav":"menu"} onClick={shownavbar}><FiMenu/></h1>
-                    <div className={menu?"menubar-nav":"menunot-nav"}>
-                        <ul>
+                    <h1 className={show?"menu-nav":"menu"} onClick={shownavbar}>{show?<AiOutlineClose/>:<FiMenu/>}</h1>
+                    
+                        {/* <ul>
                             <li onClick={scrolltoServices} className="navbar-link">Services</li>
                             <li><Link to="/works" className="navbar-link">Our Work</Link></li>    
                             <li><Link to="/contactus" className="navbar-link">Contact</Link></li>
@@ -76,8 +78,11 @@ export default function Navbar(){
                     <ul className={show?"socials":"N-socials-not-nav"}>
                         <li onClick={Linkedin}><FaLinkedinIn/></li>
                         <li onClick={Twitter}><FaTwitter/></li>
-                    </ul>
+                    </ul> */}
                 </div>
+            </div>
+            <div className={menu?"menubar-nav":"menunot-nav"}>
+                <Menubar/>
             </div>
         </div>
     )
