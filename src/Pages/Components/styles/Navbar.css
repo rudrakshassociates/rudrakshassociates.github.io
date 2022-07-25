@@ -112,6 +112,7 @@
     /* color: white; */
     color: white;
 }
+
 .N-socials-not-nav{
     font-size: 1.1rem;
     font-weight: 600;
@@ -127,12 +128,12 @@
     gap: 1rem;
 }
 .navbar-link:hover{
-    color: lightgray;
+    color: #BD2BE2;
+}
+.navbar-link{
+    color: black;
 }
 
-.navbar-link-nav:hover{
-    color: #E948AD;
-}
 .menu{
    position: absolute;
    right: 1rem;
@@ -148,10 +149,12 @@
     display: none;
 }
 */
-.menunot-nav{
-    color: #E948AD;
+.menu-nav{
+    z-index: 99;
+    color: #BD2BE2;
     position: absolute;
-    right: 1rem;
+    left:2rem;
+    font-size: 1rem;
 }
 /* Iphone SE 2nd gen iOs=> Landscape */
 @media only screen and (max-width:700px){
@@ -198,10 +201,10 @@
         margin-left:15%;
     }
     .Nav{
-        gap: 25%;
+        gap: 45%;
     }
     .Navbar-container{
-        gap: 25%;
+        gap: 45%;
     }
     .Navbar-container>h1{
         font-size: 20px;
@@ -249,7 +252,7 @@
     .Navbar-list>ul:hover{
         display: none;
     }
-    .menu{
+    /* .menu{
         width: 10vw;
         display: block;
         margin-top: 50%;
@@ -260,14 +263,14 @@
         display: block;
         margin-top: 30%;
         justify-content: center;
-    }
+    } */
     .Navbar-list>ul{
         display: none;
     }
     .Navbar-list-nav>ul{
         display: none;
     }
-    .menunot-nav{
+    /* .menunot-nav{
         display: none;
     }
     .menubar-nav{
@@ -277,7 +280,7 @@
         width: 100vw;
         background-color: blueviolet;
         height:100vh;
-    }
+    } */
     .navbar-link{
         width: 100vw;
         font-size: 1.6rem;

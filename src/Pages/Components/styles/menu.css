@@ -7,13 +7,15 @@
     z-index: 99;
     position: fixed;
     height: 88vh;
-    top: 5vh;
+    top: 5.5vh;
     left: 1.5rem;
     padding-top: 5%;
     text-align: left;
     width: 95vw;
+    opacity: 100%;
     background-color: whitesmoke;
 }
+
 .dropdown-cont>li{
     margin-top: 5%;
     font-family: 'Raleway',sans-serif;
@@ -76,9 +78,23 @@
 .dropbtn-nav:hover{
     color: #FB6F6F;
 }
-@media only screen and (max-width:600){
-    .menu{
-        display: block;
-        width: 100vw;
+@media only screen and (min-width:1200px){
+    .dropdown{
+        left:3rem;
+        height:82vh
+    }
+    .dropdown-cont>li{
+        margin-top: 2%;
+    }
+
+    .dropdown-link{
+        width:15vw;
+    }
+    .dropdown-link>li{
+        font-size: 1.5rem;
+    }
+    .dropdown-link>hr{
+        width: 15vw;
+        font-size: 1.6rem;
     }
 }

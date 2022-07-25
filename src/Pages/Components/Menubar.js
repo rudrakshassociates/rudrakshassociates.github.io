@@ -4,9 +4,10 @@ import "./styles/menu.css"
 import {FiMenu} from "react-icons/fi"
 import { FaTwitter,FaLinkedinIn} from "react-icons/fa";
 
-export default function Menubar(){
+export default function Menubar(props){
+    const navigate=useNavigate();
     const [show,setshow]=React.useState(false);
-    const[menubar,setmenubar]=React.useState(false);
+    const[menubar,setmenubar]=props.menu;
     function scrolltoValues(){
         if(window.location.pathname=="/about"){
             window.scrollTo(0,850);
@@ -35,9 +36,15 @@ export default function Menubar(){
         }
     }
     function scrolltoServices(){
+        setmenubar(!menubar);
         if(window.location.pathname=="/"){
             window.scrollTo(0,890);
             setshow(false);
+        }
+        else{
+            navigate({
+                pathname:'/'
+            })
         }
     }
     function menu(){

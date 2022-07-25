@@ -20,6 +20,8 @@ export default function Navbar(){
     const [show,setshow]=React.useState(false);
     const [about,setabout]=React.useState(false);
     const navigate=useNavigate();
+    const[menu,setmenubar]=React.useState(false);
+
     const changecolor=()=>{
         if(window.scrollY>200 ||(window.screenY!=0 &&window.screenX)){
             setshow(true)
@@ -44,7 +46,6 @@ export default function Navbar(){
         }
     }
     
-    const[menu,setmenubar]=React.useState(false);
     function shownavbar(){
         setmenubar(!menu);
     }
@@ -57,7 +58,7 @@ export default function Navbar(){
             <div className={show?"Navbar-container":"Nav"}>
                 <h1><Link to="/" className={show?"home-link-nav":"home-link"}><b>RUDRAKSH</b> ASSOCIATES</Link></h1>
                 <div className={show?"Navbar-list-nav":"Navbar-list"}>
-                    <h1 className={show?"menu-nav":"menu"} onClick={shownavbar}>{show?<AiOutlineClose/>:<FiMenu/>}</h1>
+                    <h1 className="menu" onClick={shownavbar}>{menu?<AiOutlineClose/>:<FiMenu/>}</h1>
                     
                         {/* <ul>
                             <li onClick={scrolltoServices} className="navbar-link">Services</li>
@@ -82,7 +83,8 @@ export default function Navbar(){
                 </div>
             </div>
             <div className={menu?"menubar-nav":"menunot-nav"}>
-                <Menubar/>
+                <Menubar
+                menu={[menu,setmenubar]}/>
             </div>
         </div>
     )

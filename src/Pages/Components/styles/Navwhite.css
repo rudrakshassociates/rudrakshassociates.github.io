@@ -5,7 +5,7 @@
     background-color: #BD2BE2;
     /* background-color: transparent; */
     display: flex;
-    gap:30%;
+    /* gap:30%; */
     align-items: center;
     top:0;
     z-index: 99;
@@ -20,7 +20,7 @@
     height:5vh;
     background-color: transparent;
     display: flex;
-    gap:30%;
+    /* gap:30%; */
     align-items: center;
     top:0;
     z-index: 99;
@@ -37,6 +37,7 @@
 .N-Navbar-Container>h1{
     font-size: 1em;
     width:15vw; 
+    
     text-align: center;
 }
 .N-home-link{
@@ -105,37 +106,30 @@
     /* color: white; */
     color: #8A2BE2;
 }
-.N-socials{
-    font-size:1.1rem;
-    font-weight: 600;
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-}
-.socials{
-    font-size:1.1rem;
-    font-weight: 600;
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-}
+
 .N-navbar-link:hover{
     color: #E948AD;
 }
 
 .N-navbar-link-nav:hover{
-    color: lightgray;
+    color: black;
 }
-.M-menu{
-    display:none;
-}
-.menunot-nav{
-    display: none;
-}
-.menu-nav{
-    display: none;
-}
+.menu-bar{
+    position: absolute;
+    right: 3rem;
+ }
+ /*
+ .menubar-nav{
+     display: none;
+ }
+ .menubar-nav>ul{
+     display: none;
+ }*/
+ .menunot-nav{
+     display: none;
+ }
 
+/* 
 @media only screen and (min-width:600px){
     .N-home-link{
         text-align: center;
@@ -146,12 +140,12 @@
         width: 30vw;
     }
     .N-Nav{
-        height: 10vh;
+        height: 5vh;
         width: 100vw;
         gap: 12%;
     }
     .N-Navbar-Container{
-        height: 10vh;
+        height: 5vh;
         width: 100vw;
         gap: 12%;
     }
@@ -168,7 +162,7 @@
         font-size: 1rem;
     }
     
-}
+} */
 @media only screen and (min-width:768px){
 
 }
@@ -264,33 +258,6 @@
     }
     .N-Navbar-List-nav>ul{
         display: none;
-    }
-    .menunot-nav{
-        display: none;
-    }
-    .menubar-nav{
-        position: absolute;
-        z-index: 98;
-        top: 85%;
-        left: 75%;
-        margin-top: 2%;
-        display: block;
-        width: 25%;
-        background-color: blueviolet;
-        height:1000px;
-    }
-    .menubar-nav>ul{
-        text-align: left;
-        width: 40%;
-        list-style: none;
-    }
-    .menubar-nav>ul>li{
-        margin-top: 40%;
-        margin-left: -30%;
-    }
-    .menubar-nav>ul>li:active{
-        padding: 5%;
-        background-color: #E948AD;
     }
     .navbar-link{
         width: 100%;
