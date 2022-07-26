@@ -171,7 +171,7 @@
 }
 @media only screen and (min-width:1200px){
     .N-Nav{
-        gap: 15%;
+        gap: 38%;
     }
     .N-Navbar-List{
         color: #BD2BE2;
@@ -189,7 +189,6 @@
         text-align: center;
         display: flex;
         gap: 1rem;
-        font-size: 15px;
         font-weight: 500;
     }
     .N-Nav>h1{
@@ -199,13 +198,16 @@
     }
     
     .N-Navbar-Container{
-        gap: 15%;
+        gap: 38%;
     }
    
     .N-Navbar-Container>h1{
         font-size: 20px;
         width:20%; 
         margin-left:20%;
+    }
+    .menu-bar{
+        position: relative;
     }
 }
 @media only screen and (max-width:600px){

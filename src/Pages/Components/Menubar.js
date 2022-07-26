@@ -59,10 +59,10 @@ export default function Menubar(props){
                 <li><FaLinkedinIn/></li>
             </ul>
             <ul className="dropdown-cont">
-                    <li onClick={scrolltoServices}>Services <p className="cont-desc">Here is the answer</p></li>
-                    <li><Link to="/works" className="navbar-link">Our Work</Link> <p className="cont-desc">Here is the answer</p></li>
-                    <li><Link to="/contactus" className="navbar-link">Contact</Link><p className="cont-desc">Here is the answer</p></li>
-                    <li><Link to="/about" className="navbar-link">About Us</Link><p className="cont-desc">Here is the answer</p></li>
+                    <li onClick={scrolltoServices}>Services <p className="cont-desc">What we provide to our customers.</p></li>
+                    <li><Link to="/works" className="navbar-link">Our Work</Link> <p className="cont-desc">List of All our projects we have built sofar.</p></li>
+                    <li><Link to="/contactus" className="navbar-link">Contact</Link><p className="cont-desc">Here you can contact us to collaborate or inform or offer.</p></li>
+                    <li><Link to="/about" className="navbar-link">About Us</Link><p className="cont-desc">What are our motivation and Why you should choose us.</p></li>
             </ul>
 
         </div>
