@@ -1,13 +1,42 @@
 import React from "react"
 import Footer from "./Components/Footer"
 import Navbar from "./Components/Navbar"
+import { motion } from "framer-motion";
 import "./Components/styles/contactus.css"
 export default function ContactUs(){
+    window.onload=()=>{
+        const transition_el=document.querySelector(".transition");
+        setTimeout(()=>{
+          transition_el.classList.remove('is-active');
+        },500)
+    }
     document.title="Rudraksh Associates | Contact Us";
 
     return(
         <div onLoad={window.scrollTo(0,0)}>
             <div className="main">
+            <motion.div 
+                    initial={{ 
+                        position: "fixed",
+                        top: 0,
+                        width: "100%",
+                        left: 0,
+                        right: 0,
+                        bottom: 0,
+                        zIndex: 101,
+                        backgroundColor:"#892be2"}}
+                    animate={{left:"-100%"}}
+                    transition={{ delay: 1,duration:1 }}
+                    exit={{position: "fixed",
+                    top: 0,
+                    width: "100%",
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    zIndex: 101,
+                    backgroundColor:"#892be2",}}
+                ></motion.div>
+
                 <Navbar/>
                 <div className="CU-Container">
                     <div className="CU-Header">

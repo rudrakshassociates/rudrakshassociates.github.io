@@ -79,6 +79,7 @@
 .dropbtn-nav:hover{
     color: #FB6F6F;
 }
+
 @media only screen and (min-width:1200px){
     .dropdown{
         left:3rem;

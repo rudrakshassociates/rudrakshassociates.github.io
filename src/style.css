@@ -40,3 +40,30 @@ html::-moz-scrollbar-thumb{
     border-radius:0.5rem;
     background-color: #892be29d;
 }
+.transition-1{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: -100%;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    background-color: #892be2;
+    transition: 0.5s ease-out;
+}
+.transition-1.is-active{
+   left:0;
+}
+.transition-2{
+    position: fixed;
+    top: -100%;
+    left: 0;
+    right: 0;
+    height: 100%;
+    z-index: 101;
+    background-color: #892be2;
+    transition: 0.5s ease-out;
+}
+.transition-2.is-active{
+    top: 0;
+}

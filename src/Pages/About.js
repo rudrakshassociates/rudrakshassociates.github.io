@@ -2,8 +2,15 @@ import React from "react"
 import { useNavigate} from "react-router-dom"
 import Footer from "./Components/Footer"
 import Nav from "./Components/WhiteBGNav.js"
+import { motion } from "framer-motion";
 import "./Components/styles/about.css"
 export default function FAQ(){
+    window.onload=()=>{
+        const transition_el=document.querySelector(".transition");
+        setTimeout(()=>{
+          transition_el.classList.remove('is-active');
+        },500)
+    }
     document.title="Rudraksh Associates | About";
     const navigate=useNavigate();
     function Name(event){
@@ -15,6 +22,31 @@ export default function FAQ(){
     }
     return(
         <div onLoad={window.scrollTo(0,0)}>
+            <motion.div 
+                    initial={{ 
+                        position: "fixed",
+                        top: 0,
+                        width: "100%",
+                        left: 0,
+                        right: 0,
+                        bottom: 0,
+                        zIndex: 101,
+                        backgroundColor:"#892be2",
+                        
+                        }}
+                    animate={{bottom:"100%"}}
+                    transition={{ delay: 1,duration:1 }}
+                    exit={{position: "fixed",
+                    top: 0,
+                    width: "100%",
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    zIndex: 101,
+                    backgroundColor:"#892be2",
+                    }}
+                ></motion.div>
+
             <div className="about-Container">
                 <Nav/>
                 <div className="about-Header">

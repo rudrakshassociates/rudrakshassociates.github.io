@@ -7,8 +7,15 @@ import Footer from "./Components/Footer.js"
 import Gallery from "./Components/Gallery.js"
 import News from "./Components/News.js"
 import Services from "./Components/services.js"
+import { motion } from "framer-motion";
 
 export default function Home(){
+    /*window.onload=()=>{
+        const transition_el=document.querySelector(".transition");
+        setTimeout(()=>{
+          transition_el.classList.remove('is-active');
+        },500)
+    }*/
     document.title="Rudraksh Associates | Home";
 
     function downslide(){
@@ -18,6 +25,31 @@ export default function Home(){
     return(
         <div onLoad={window.scrollTo(0,0)}>
             <div className="main-body">
+                <motion.div 
+                    initial={{ 
+                        position: "fixed",
+                        top: 0,
+                        width: "100%",
+                        left: 0,
+                        right: 0,
+                        bottom: 0,
+                        zIndex: 105,
+                        backgroundColor:"#892be2",
+                        
+                        }}
+                    transition={{ delay: 3,duration:1 }}
+                    animate={{left:"-100%"}}
+                    exit={{
+                        position: "fixed",
+                        top: 0,
+                        width: "100%",
+                        left: 0,
+                        right: 0,
+                        bottom: 0,
+                        zIndex: 105,
+                        
+                    }}
+                ></motion.div>
 
                 </div>
                 <Navbar/>

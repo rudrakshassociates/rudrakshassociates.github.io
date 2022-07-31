@@ -2,8 +2,15 @@ import React from "react"
 import { useNavigate } from "react-router-dom"
 import Footer from "./Components/Footer"
 import Navbar from "./Components/Navbar.js"
+import { motion } from "framer-motion";
 import "./Components/styles/ourwork.css"
 export default function Projects(){
+    window.onload=()=>{
+        const transition_el=document.querySelector(".transition");
+        setTimeout(()=>{
+          transition_el.classList.remove('is-active');
+        },500)
+    }
     document.title="Rudraksh Associates | Works";
 
     const navigate=useNavigate();
@@ -16,6 +23,27 @@ export default function Projects(){
     }
     return(
         <div onLoad={window.scrollTo(0,0)}>
+            <motion.div 
+                    style={{
+                        position: "fixed",
+                        top: 0,
+                        width: "100%",
+                        left: 0,
+                        right: 0,
+                        bottom: 0,
+                        zIndex: 101,
+                        backgroundColor:"#892be2",
+                    }}
+                    initial={{ 
+                        bottom: 0,
+                        }}
+                    animate={{bottom:"100%",}}
+                    transition={{ delay: 3,duration:0.5 ,ease:"easeInOut"}}
+                    exit={{
+                        bottom: 0,
+                    }}
+                ></motion.div>
+
             <Navbar/>
             <div className="Work-Header">
                 <div className="Work-Head-Content">
