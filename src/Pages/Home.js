@@ -35,7 +35,8 @@ export default function Home(){
                         bottom: 0,
                         zIndex: 105,
                         backgroundColor:"#892be2",
-                        
+                        transitionDelay:"3s",
+                        transitionDuration:"0.5s"
                         }}
                     transition={{ delay: 3,duration:1 }}
                     animate={{left:"-100%"}}

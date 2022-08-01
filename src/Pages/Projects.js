@@ -33,6 +33,8 @@ export default function Projects(){
                         bottom: 0,
                         zIndex: 101,
                         backgroundColor:"#892be2",
+                        transitionDelay:"3s",
+                        transitionDuration:"0.5s"
                     }}
                     initial={{ 
                         bottom: 0,
