@@ -50,9 +50,9 @@ export default function FAQ(){
             <div className="about-Container">
                 <Nav/>
                 <motion.div className="about-Header"
-                    initial={{opacity:0}}
-                    animate={{opacity:1}}
-                    transition={{duration:0.5,delay:1.5}}
+                    initial={{translateY:"20%",opacity:0,}}
+                    animate={{translateY:0,opacity:1}}
+                    transition={{duration:0.8,delay:2,ease:"easeInOut"}}
                 >
                     <h1>Years of Development Through Our Services</h1>
                     <p>Rudraksh Associates had paved way for their customers with their services in electrical and construction field for over a decade, and will continue to do so in the future across the country.</p>
@@ -69,50 +69,39 @@ export default function FAQ(){
                     </div>
                     <div className="Story-Image"></div>
                 </motion.div>
+                <div className="about-values-div">
                 <motion.div className="about-values"
-                    initial={{translateY:"100%",visibility:"hidden"}}
-                    animate={{translateY:0,visibility:"visible"}}
-                    transition={{duration:1,delay:1.5,ease:"easeInOut"}}
+                    initial={{translateY:"100%",opacity:0}}
+                    animate={{translateY:0,opacity:1}}
+                    transition={{duration:2,delay:1.5,ease:"easeInOut"}}
                 >
-                    <motion.div
-                        initial={{translateY:"10%",opacity:0,}}
-                        animate={{translateY:0,opacity:1}}
-                        transition={{duration:0.8,delay:2,ease:"easeIn"}}
-                    >
+                    <div>
                         <img src="Images/mission.png"></img>
                         <h2>MISSION</h2>
                         <p>To create video streaming and analytics solutions that are used daily by the world’s largest and most innovative enterprises, seeking to maximize video quality of experience with minimal network impact.</p>
-                    </motion.div>
-                    <motion.div
-                        initial={{translateY:"10%",opacity:0,}}
-                        animate={{translateY:0,opacity:1}}
-                        transition={{duration:0.8,delay:2,ease:"easeIn"}}
-                    >
+                    </div>
+                    <div>
                         <img src="Images/vision.png"></img>
                         <h2>VISION</h2>
                         <p>Started as a spin-off in 2007 from the Swedish Institute for Computer Science and the Royal Institute of Technology in Stockholm, we maintain a strong focus on research and development for enterprise video streaming solutions.</p>
-                    </motion.div>
-                    <motion.div
-                        initial={{translateY:"10%",opacity:0,}}
-                        animate={{translateY:0,opacity:1}}
-                        transition={{duration:0.8,delay:2,ease:"easeIn"}}
-                    >
+                    </div>
+                    <div>
                         <img src="Images/values.png"></img>
                         <h2>VALUES</h2>
                         <p>Innovation, customer centricity, and empowerment drive our team to succeed. We are constantly advancing our technology, building for the customer, and trusting and encouraging teammates to do their very best work.</p>
-                    </motion.div>
+                    </div>
                 </motion.div>
-                
+                </div>
                 <div className="about-articles">
                     <motion.h3
                         initial={{translateY:"10%",opacity:0,}}
                         animate={{translateY:0,opacity:1}}
-                        transition={{duration:0.8,delay:2,ease:"easeIn"}}
+                        transition={{duration:0.8,delay:2,ease:"easeInOut"}}
                     >Articles on Us</motion.h3>
                     <motion.div className="article-white"
                         initial={{translateY:"10%",opacity:0,}}
                         animate={{translateY:0,opacity:1}}
-                        transition={{duration:0.8,delay:2,ease:"easeIn"}}
+                        transition={{duration:0.8,delay:2,ease:"easeInOut"}}
                     >
                         <div>
                             {/* Images */}
@@ -131,7 +120,7 @@ export default function FAQ(){
                     <motion.div className="article-color"
                         initial={{translateY:"10%",opacity:0,}}
                         animate={{translateY:0,opacity:1}}
-                        transition={{duration:0.8,delay:2,ease:"easeIn"}}
+                        transition={{duration:0.8,delay:2,ease:"easeInOut"}}
                     >
                         <div>
                             {/* Images */}
@@ -165,45 +154,35 @@ export default function FAQ(){
                             <p>We are a group of dedicated minds who are work together to inspire. Find your fit among those working to amplify change-makers via incredible video experiences.We seek passionate individuals who can turn their experience into benefits.If interested join us by <b>CONTACTING US</b>. </p>  
                         </div>
                 </motion.div>
+                <div className="about-Insights-div">
                 <motion.div className="about-Insights"
-                    initial={{opacity:0}}
-                    animate={{opacity:1}}
-                    transition={{duration:0.5,delay:1.5}}
+                    initial={{translateY:"10%",opacity:0,}}
+                    animate={{translateY:0,opacity:1}}
+                    transition={{duration:0.8,delay:2,ease:"easeInOut"}}
                 >
                     <h3>Insights</h3>
                     <h1>Inside<br></br> RUDRAKSH ASSOCIATES</h1>
                     <div>
-                        <motion.div onClick={Name} className="Inside"
-                            initial={{translateY:"10%",opacity:0,}}
-                            animate={{translateY:0,opacity:1}}
-                            transition={{duration:0.8,delay:2,ease:"easeIn"}}
-                        >
+                        <div onClick={Name} className="Inside">
                                 <img src="Images/inside.jpg" className="Inside"/>
                                 <h2 className="Inside">Our Approach: To provide the Best product</h2>
                                 <p className="Inside">We try to provide the best services we can with the best possible material at reasonable price, to reduce the amount of discomfort to the customer in the future.</p>
-                        </motion.div>
-                        <motion.div  onClick={Name} className="Around"
-                            initial={{translateY:"10%",opacity:0,}}
-                            animate={{translateY:0,opacity:1}}
-                            transition={{duration:0.8,delay:2,ease:"easeIn"}}
-                        >
+                        </div>
+                        <div  onClick={Name} className="Around">
                                 <img src="Images/around.jpg" className="Around"/>
                                 <h2 className="Around">Why Us? : Because we provide regular customer interaction</h2>
                                 <p className="Around">We maintain transperancy with our customer and make them aware how things are going , so as to let them know the progress. </p>
 
-                        </motion.div>
-                        <motion.div onClick={Name} className="People"
-                            initial={{translateY:"10%",opacity:0,}}
-                            animate={{translateY:0,opacity:1}}
-                            transition={{duration:0.8,delay:2,ease:"easeIn"}}
-                        >
+                        </div>
+                        <div onClick={Name} className="People">
                                 <img src="Images/people.jpg" className="People"/>
                                 <h2  className="People" >Our Culture: To Believe in Delegation</h2>
                                 <p className="People">We believe in Meeting new people and Delegating task, so that the customer can get the result as fast as possible with least due possible.</p>
 
-                        </motion.div>
+                        </div>
                     </div>
                 </motion.div>
+                </div>
                 <motion.div className="about-ending"
                     initial={{opacity:0}}
                     animate={{opacity:1}}

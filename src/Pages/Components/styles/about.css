@@ -40,6 +40,10 @@
 .about-values{
     display: flex;
     gap: 5%;
+    padding: 5% 0%;
+    background-color: #543D4B;
+}
+.about-values-div{
     padding: 5%;
     background-color: #543D4B;
 }
@@ -91,6 +95,9 @@
     text-align: center;
     padding: 5%;
     height: 80vh;
+}
+.about-Insights-div{
+    height: 90vh;
     background-color:#F7D05A ;
 }
 .about-Insights>h3{
