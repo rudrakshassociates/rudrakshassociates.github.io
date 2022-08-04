@@ -2,14 +2,24 @@ import React from "react"
 import { useNavigate} from "react-router-dom"
 import Footer from "./Components/Footer"
 import Nav from "./Components/WhiteBGNav.js"
-import { motion } from "framer-motion";
+import { motion} from "framer-motion";
 import "./Components/styles/about.css"
 export default function FAQ(){
-    window.onload=()=>{
-        const transition_el=document.querySelector(".transition");
-        setTimeout(()=>{
-          transition_el.classList.remove('is-active');
-        },500)
+    window.addEventListener('scroll',loop);
+
+    function loop(){
+        let ele=document.querySelectorAll('.reveal');
+        for(let i=0;i<ele.length;i++){
+            let windowheight=window.innerHeight;
+            let revealtop=ele[i].getBoundingClientRect().top;
+            let revealpoint=150;
+            if(revealtop<windowheight - revealpoint){
+                ele[i].classList.add('active');
+
+            }else{
+                ele[i].classList.remove('active')
+            }
+        }
     }
     document.title="Rudraksh Associates | About";
     const navigate=useNavigate();
@@ -19,10 +29,12 @@ export default function FAQ(){
             pathname:'/article',
             search:`${className}`
         })
+
     }
     return(
         <div onLoad={window.scrollTo(0,0)}>
             <motion.div 
+                
                     initial={{ 
                         position: "fixed",
                         top: 0,
@@ -50,9 +62,9 @@ export default function FAQ(){
             <div className="about-Container">
                 <Nav/>
                 <motion.div className="about-Header"
-                    initial={{translateY:"20%",opacity:0,}}
-                    animate={{translateY:0,opacity:1}}
-                    transition={{duration:0.8,delay:2,ease:"easeInOut"}}
+                    initial={{opacity:0}}
+                    animate={{opacity:1}}
+                    transition={{duration:0.15,delay:1.8}}
                 >
                     <h1>Years of Development Through Our Services</h1>
                     <p>Rudraksh Associates had paved way for their customers with their services in electrical and construction field for over a decade, and will continue to do so in the future across the country.</p>
@@ -70,10 +82,7 @@ export default function FAQ(){
                     <div className="Story-Image"></div>
                 </motion.div>
                 <div className="about-values-div">
-                <motion.div className="about-values"
-                    initial={{translateY:"100%",opacity:0}}
-                    animate={{translateY:0,opacity:1}}
-                    transition={{duration:2,delay:1.5,ease:"easeInOut"}}
+                <motion.div className="about-values reveal"
                 >
                     <div>
                         <img src="Images/mission.png"></img>
@@ -93,11 +102,7 @@ export default function FAQ(){
                 </motion.div>
                 </div>
                 <div className="about-articles">
-                    <motion.h3
-                        initial={{translateY:"10%",opacity:0,}}
-                        animate={{translateY:0,opacity:1}}
-                        transition={{duration:0.8,delay:2,ease:"easeInOut"}}
-                    >Articles on Us</motion.h3>
+                    <h3 className="reveal">Articles on Us</h3>
                     <motion.div className="article-white"
                         initial={{translateY:"10%",opacity:0,}}
                         animate={{translateY:0,opacity:1}}
@@ -117,11 +122,7 @@ export default function FAQ(){
 
                         </div>
                     </motion.div>
-                    <motion.div className="article-color"
-                        initial={{translateY:"10%",opacity:0,}}
-                        animate={{translateY:0,opacity:1}}
-                        transition={{duration:0.8,delay:2,ease:"easeInOut"}}
-                    >
+                    <div className="article-color reveal">
                         <div>
                             {/* Images */}
                             <a onClick={Name}><p className="News-4">Lorem ipsum dolor sit amet,</p></a>
@@ -138,28 +139,20 @@ export default function FAQ(){
 
                         </div>
 
-                    </motion.div>
+                    </div>
                 </div>
-                <motion.div className="our-Story"
-                    initial={{opacity:0}}
-                    animate={{opacity:1}}
-                    transition={{duration:0.5,delay:1.5}}
-                >
+                <div className="our-Story reveal">
                        
-                        <div className="Carrer-Image">
+                        <div className="Carrer-Image reveal">
                         </div>
                         <div>
                             <h3>Carrer</h3>
                             <h1>Join our Team !</h1>
                             <p>We are a group of dedicated minds who are work together to inspire. Find your fit among those working to amplify change-makers via incredible video experiences.We seek passionate individuals who can turn their experience into benefits.If interested join us by <b>CONTACTING US</b>. </p>  
                         </div>
-                </motion.div>
+                </div>
                 <div className="about-Insights-div">
-                <motion.div className="about-Insights"
-                    initial={{translateY:"10%",opacity:0,}}
-                    animate={{translateY:0,opacity:1}}
-                    transition={{duration:0.8,delay:2,ease:"easeInOut"}}
-                >
+                <div className="about-Insights reveal">
                     <h3>Insights</h3>
                     <h1>Inside<br></br> RUDRAKSH ASSOCIATES</h1>
                     <div>
@@ -181,16 +174,15 @@ export default function FAQ(){
 
                         </div>
                     </div>
-                </motion.div>
                 </div>
-                <motion.div className="about-ending"
-                    initial={{opacity:0}}
-                    animate={{opacity:1}}
-                    transition={{duration:0.5,delay:1.5}}
-                >
+                </div>
+                <div className="about-ending">
+                    <div className="end-para reveal">
                     <p id="end-1">“Nothing in this world is more simple and more cheap than making cities that provide better for people.”     – Jan Gehl</p>
                     <p id="end-2">“Nothing in this world is more simple and more cheap than making cities that provide better for people.”     – Jan Gehl</p>
-                </motion.div>
+                    </div>
+                    
+                </div>
             </div>
             <div className="footer">
                 <Footer/>   

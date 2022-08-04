@@ -142,7 +142,7 @@
     background-repeat: no-repeat;
     background-size: cover;  
 }
-.about-ending>p{
+.end-para>p{
     padding:5%;
     font-weight: bold;
     color: #ffffff;
@@ -178,6 +178,26 @@
     height: 400px;
     width: 100%;
 }
+.reveal{
+    position: relative;
+    transform: translateY(10vh);
+    opacity: 0;
+    transition: all 0.4s ease ;
+}
+.reveal.active{
+    transform: translateX(0);
+    opacity: 1;
+}
+/* .reveal-X{
+    position: relative;
+    transform: translateX(-100vw);
+    opacity: 0;
+    transition: all 0.4s ease ;
+}
+.reveal-X.active-X{
+    transform: translateY(0);
+    opacity: 1;
+} */
 @media only screen and (min-width:600px){
     
 }
@@ -312,7 +332,7 @@
     .about-ending{
         height: 300px;
     }
-    .about-ending>p{
+    .end-para>p{
         letter-spacing: 1px;
         font-size: 20px;
     }
