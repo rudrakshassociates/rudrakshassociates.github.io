@@ -51,7 +51,7 @@ export default function ContactUs(){
                         </div>
                         
                         <div className="CU-form">
-                            <form action="https://formsubmit.co/mridulsclient@gmail.com" method="POST">
+                            <form action="mailto:rudrakshconstructions@gmail.com?subject=Mail from website" method="post" enctype="text/plain">
                                 <input type="hidden" name="_captcha" value="false"/>
                                 {/* <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"></input> */}
                                 <div>
