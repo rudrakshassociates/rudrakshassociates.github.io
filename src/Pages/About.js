@@ -4,6 +4,7 @@ import Footer from "./Components/Footer"
 import Nav from "./Components/WhiteBGNav.js"
 import { motion} from "framer-motion";
 import "./Components/styles/about.css"
+import Loader from "./Components/Loader";
 export default function FAQ(){
     window.addEventListener('scroll',loop);
 
@@ -37,13 +38,13 @@ export default function FAQ(){
                 initial={{ y:0}}
                 animate={{y:"-120vh"}}
                 transition={{duration:1.5,delay:1 }}
-            ></motion.div>
+            ><Loader/></motion.div>
             <motion.div className="trans-exit"
                 initial={{x:"-100vw"}}
                 exit={{ x:0}}
                 animate={{x:"-100vw"}}
                 transition={{duration:0.5}}
-            ></motion.div>
+            ><Loader/></motion.div>
             <div className="about-Container">
                 <Nav/>
                 <motion.div className="about-Header"

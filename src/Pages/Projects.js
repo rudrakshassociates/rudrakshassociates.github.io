@@ -4,6 +4,7 @@ import Footer from "./Components/Footer"
 import Navbar from "./Components/Navbar.js"
 import { motion } from "framer-motion";
 import "./Components/styles/ourwork.css"
+import Loader from "./Components/Loader";
 export default function Projects(){
     window.addEventListener('scroll',loop);
 
@@ -37,13 +38,13 @@ export default function Projects(){
                 initial={{ y:0}}
                 animate={{y:"-120vh"}}
                 transition={{duration:1,delay:1 }}
-            ></motion.div>
+            ><Loader/></motion.div>
             <motion.div className="trans-exit"
                 initial={{x:"-100vw"}}
                 exit={{ x:0}}
                 animate={{x:"-100vw"}}
                 transition={{duration:0.5}}
-            ></motion.div>
+            ><Loader/></motion.div>
 
             <Navbar/>
             <div className="Work-Header">

@@ -3,6 +3,7 @@ import Footer from "./Components/Footer"
 import Navbar from "./Components/Navbar"
 import { motion } from "framer-motion";
 import "./Components/styles/contactus.css"
+import Loader from "./Components/Loader";
 export default function ContactUs(){
     window.addEventListener('scroll',loop);
 
@@ -29,13 +30,13 @@ export default function ContactUs(){
                 initial={{ y:0}}
                 animate={{y:"-120vh"}}
                 transition={{duration:1,delay:1 }}
-            ></motion.div>
+            ><Loader/></motion.div>
             <motion.div className="trans-exit"
                 initial={{x:"-100vw"}}
                 exit={{ x:0}}
                 animate={{x:"-100vw"}}
                 transition={{duration:0.5}}
-            ></motion.div>
+            ><Loader/></motion.div>
 
                 <Navbar/>
                 <div className="CU-Container">
@@ -48,8 +49,8 @@ export default function ContactUs(){
                     </div>
                     <div className="CU-Content">
                         <motion.div
-                            initial={{y:"100vh",opacity:0}}
-                            animate={{y:0,opacity:1}}
+                            initial={{opacity:0}}
+                            animate={{opacity:1}}
                             transition={{duration:0.5,delay:1.2,ease:"easeInOut"}}
                         >
                             <div className="image-replacement-1" ></div>

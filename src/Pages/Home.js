@@ -8,6 +8,7 @@ import Gallery from "./Components/Gallery.js"
 import News from "./Components/News.js"
 import Services from "./Components/services.js"
 import { motion } from "framer-motion";
+import Loader from "./Components/Loader.js"
 
 export default function Home(){
     /*window.onload=()=>{
@@ -29,13 +30,13 @@ export default function Home(){
                     initial={{ y:0}}
                     animate={{y:"-120vh"}}
                     transition={{duration:1,delay:1 }}
-                ></motion.div>
+                ><Loader/></motion.div>
                 <motion.div className="trans-exit"
                     initial={{x:"-100vw"}}
                     exit={{ x:0}}
                     animate={{x:"-100vw"}}
                     transition={{duration:0.5}}
-                ></motion.div>
+                ><Loader/></motion.div>
 
                 </div>
                 <Navbar/>
