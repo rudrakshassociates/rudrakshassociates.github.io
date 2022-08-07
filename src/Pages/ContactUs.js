@@ -4,11 +4,21 @@ import Navbar from "./Components/Navbar"
 import { motion } from "framer-motion";
 import "./Components/styles/contactus.css"
 export default function ContactUs(){
-    window.onload=()=>{
-        const transition_el=document.querySelector(".transition");
-        setTimeout(()=>{
-          transition_el.classList.remove('is-active');
-        },500)
+    window.addEventListener('scroll',loop);
+
+    function loop(){
+        let ele=document.querySelectorAll('.reveal');
+        for(let i=0;i<ele.length;i++){
+            let windowheight=window.innerHeight;
+            let revealtop=ele[i].getBoundingClientRect().top;
+            let revealpoint=150;
+            if(revealtop<windowheight - revealpoint){
+                ele[i].classList.add('active');
+
+            }else{
+                ele[i].classList.remove('active')
+            }
+        }
     }
     document.title="Rudraksh Associates | Contact Us";
 
@@ -30,20 +40,29 @@ export default function ContactUs(){
                 <Navbar/>
                 <div className="CU-Container">
                     <div className="CU-Header">
-                        <h2>We love meeting new people and helping them develop their ideas into life</h2>
+                        <motion.h2
+                            initial={{opacity:0}}
+                            animate={{opacity:1}}
+                            transition={{duration:0.5,delay:1.5}}
+                        >We love meeting new people and helping them develop their ideas into life</motion.h2>
                     </div>
                     <div className="CU-Content">
-                        <div className="image-replacement-1" ></div>
-                        <div  className="image-replacement-2"/>
-                        <div className="CU-para">
+                        <motion.div
+                            initial={{y:"100vh",opacity:0}}
+                            animate={{y:0,opacity:1}}
+                            transition={{duration:0.5,delay:1.2,ease:"easeInOut"}}
+                        >
+                            <div className="image-replacement-1" ></div>
+                            <div  className="image-replacement-2"></div>
+                        </motion.div>
+                        <div className="CU-para reveal">
                             <h2><b>PHONE: </b>+919818321006 , +919810536966</h2>
                             <h2><b>EMAIL : </b>adhirajconstructions2018@gmail.com</h2>
                         </div>
                         
                         <div className="CU-form">
-                            <form action="mailto:rudrakshconstructions@gmail.com?subject=Mail from website" method="post" enctype="text/plain">
+                            <form action="mailto:rudrakshconstructions@gmail.com?subject=Mail from website" method="post" enctype="text/plain" className="reveal">
                                 <input type="hidden" name="_captcha" value="false"/>
-                                {/* <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"></input> */}
                                 <div>
                                     <input
                                         type="text"
@@ -53,7 +72,7 @@ export default function ContactUs(){
                                         type="text"
                                         placeholder="Last Name"
                                     />
-                                    <input type="hidden" name="_autoresponse" value="Thanks for Contacting Us!. We will look what you had to say. For any further information just send an email at the saem email address."></input>
+                                    {/* <input type="hidden" name="_autoresponse" value="Thanks for Contacting Us!. We will look what you had to say. For any further information just send an email at the same email address."></input> */}
                                     
                                 </div>
                                 

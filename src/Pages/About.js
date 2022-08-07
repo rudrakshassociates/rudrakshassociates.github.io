@@ -36,7 +36,7 @@ export default function FAQ(){
             <motion.div className="trans-enter"
                 initial={{ y:0}}
                 animate={{y:"-120vh"}}
-                transition={{duration:1,delay:1 }}
+                transition={{duration:1.5,delay:1 }}
             ></motion.div>
             <motion.div className="trans-exit"
                 initial={{x:"-100vw"}}
