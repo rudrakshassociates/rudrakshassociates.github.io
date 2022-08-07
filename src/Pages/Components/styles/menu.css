@@ -4,7 +4,7 @@
     display: block;
 }
 .dropdown{
-    z-index: 99;
+    z-index: 98;
     position: fixed;
     height: 88vh;
     top: 5.5vh;

@@ -67,3 +67,17 @@ html::-moz-scrollbar-thumb{
 .transition-2.is-active{
     top: 0;
 }
+.trans-enter{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 105;
+    background-color:#892be2;
+}
+.trans-exit{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 105;
+    background-color:#892be2;
+}

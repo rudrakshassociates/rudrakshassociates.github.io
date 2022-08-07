@@ -23,28 +23,17 @@ export default function Projects(){
     }
     return(
         <div onLoad={window.scrollTo(0,0)}>
-            <motion.div 
-                    style={{
-                        position: "fixed",
-                        top: 0,
-                        width: "100%",
-                        left: 0,
-                        right: 0,
-                        bottom: 0,
-                        zIndex: 101,
-                        backgroundColor:"#892be2",
-                        transitionDelay:"3s",
-                        transitionDuration:"0.5s"
-                    }}
-                    initial={{ 
-                        bottom: 0,
-                        }}
-                    animate={{bottom:"100%",}}
-                    transition={{ delay: 3,duration:0.5 ,ease:"easeInOut"}}
-                    exit={{
-                        bottom: 0,
-                    }}
-                ></motion.div>
+            <motion.div className="trans-enter"
+                initial={{ y:0}}
+                animate={{y:"-120vh"}}
+                transition={{duration:1,delay:1 }}
+            ></motion.div>
+            <motion.div className="trans-exit"
+                initial={{x:"-100vw"}}
+                exit={{ x:0}}
+                animate={{x:"-100vw"}}
+                transition={{duration:0.5}}
+            ></motion.div>
 
             <Navbar/>
             <div className="Work-Header">

@@ -24,32 +24,17 @@ export default function Home(){
     
     return(
         <div onLoad={window.scrollTo(0,0)}>
-            <div className="main-body">
-                <motion.div 
-                    initial={{ 
-                        position: "fixed",
-                        top: 0,
-                        width: "100%",
-                        left: 0,
-                        right: 0,
-                        bottom: 0,
-                        zIndex: 105,
-                        backgroundColor:"#892be2",
-                        transitionDelay:"3s",
-                        transitionDuration:"0.5s"
-                        }}
-                    transition={{ delay: 3,duration:1 }}
-                    animate={{left:"-100%"}}
-                    exit={{
-                        position: "fixed",
-                        top: 0,
-                        width: "100%",
-                        left: 0,
-                        right: 0,
-                        bottom: 0,
-                        zIndex: 105,
-                        
-                    }}
+            <div className="main">
+                <motion.div className="trans-enter"
+                    initial={{ y:0}}
+                    animate={{y:"-120vh"}}
+                    transition={{duration:1,delay:1 }}
+                ></motion.div>
+                <motion.div className="trans-exit"
+                    initial={{x:"-100vw"}}
+                    exit={{ x:0}}
+                    animate={{x:"-100vw"}}
+                    transition={{duration:0.5}}
                 ></motion.div>
 
                 </div>
