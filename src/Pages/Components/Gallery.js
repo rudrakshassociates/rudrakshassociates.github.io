@@ -32,12 +32,12 @@ export default function Gallery(){
     return (
         <div className="Gallery-Container">
             {OpenModal}
-            <div className="Gallery-Head"> 
+            <div className="Gallery-Head reveal"> 
                 <h1>GALLERY</h1>
                 <hr></hr>
             </div>
             
-            <div className="Gallery-Content">
+            <div className="Gallery-Content reveal">
                 <div className="collage-index">
                     <h3 onClick={()=>setitems(GHList)}>All</h3>
                     <h3 onClick={()=>filterCateg('Electrical',GHList)}>Electrical</h3>

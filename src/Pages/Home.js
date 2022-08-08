@@ -11,12 +11,22 @@ import { motion } from "framer-motion";
 import Loader from "./Components/Loader.js"
 
 export default function Home(){
-    /*window.onload=()=>{
-        const transition_el=document.querySelector(".transition");
-        setTimeout(()=>{
-          transition_el.classList.remove('is-active');
-        },500)
-    }*/
+    window.addEventListener('scroll',loop);
+
+    function loop(){
+        let ele=document.querySelectorAll('.reveal');
+        for(let i=0;i<ele.length;i++){
+            let windowheight=window.innerHeight;
+            let revealtop=ele[i].getBoundingClientRect().top;
+            let revealpoint=150;
+            if(revealtop<windowheight - revealpoint){
+                ele[i].classList.add('active');
+
+            }else{
+                ele[i].classList.remove('active')
+            }
+        }
+    }
     document.title="Rudraksh Associates | Home";
 
     function downslide(){
@@ -42,18 +52,30 @@ export default function Home(){
                 <Navbar/>
                 <div className="Home-bg">
                     <div>
-                        <div className="Title">
+                        <motion.div className="Title"
+                            initial={{opacity:0}}
+                            animate={{opacity:1}}
+                            transition={{duration:0.5,delay:1.5}}
+                        >
                             <h1><b>RUDRAKSH</b> ASSOCIATES</h1>
                             <h2>Govt. Registered Composite Contractors</h2>
-                        </div>
-                        <div className="Title-info">
+                        </motion.div>
+                        <motion.div className="Title-info"
+                            initial={{opacity:0}}
+                            animate={{opacity:1}}
+                            transition={{duration:0.5,delay:1.5}}
+                        >
                             <h1>SPECIALISE IN:</h1>
                             <p>Internal Electrification | Erection and maintenance of D.G. Set | Rising Mains | Bust Duct | Servc Stabilizer | H.T./L.T. Panel | Fire Fighting & Fire Alarm System Etc.</p>
-                        </div>
-                        <div className="buttons">
+                        </motion.div>
+                        <motion.div className="buttons"
+                            initial={{opacity:0}}
+                            animate={{opacity:1}}
+                            transition={{duration:0.5,delay:1.5}}
+                        >
                         <Link to="/works"><button className="GetinTouch">See Our Work</button></Link>
                         <Link to="/contactus"><button className="GetinTouch">Get in Touch</button></Link>
-                        </div>
+                        </motion.div>
                         {/* <img src="Images/banner_foreground.png"/> */}
                         <div className="downbutton" onClick={downslide}>
                             <AiOutlineDownCircle/>
@@ -65,13 +87,13 @@ export default function Home(){
                 {/* <CEO/> */}
                 <div className="Image-Banner-1">
                     {/* <img src="Images/contact-head.jpeg"/> */}
-                    <h3 className="banner">Our purpose is to improve people’s lives through building the facilities and infrastructure that communities need</h3>
+                    <h3 className="banner reveal">Our purpose is to improve people’s lives through building the facilities and infrastructure that communities need</h3>
                 </div>
                 <News/>
                 <Gallery/>
                 <div className="Image-Banner-2">
                     {/* <img src="Images/banner1.jpg"/> */}
-                    <h3 className="banner">Our purpose is to improve people’s lives through building the facilities and infrastructure that communities need</h3>
+                    <h3 className="banner reveal">Our purpose is to improve people’s lives through building the facilities and infrastructure that communities need</h3>
                 </div>
             <div className="footer">
                 <Footer/>

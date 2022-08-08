@@ -14,12 +14,12 @@ export default function Services(){
     return(
         <div className="service-container">
             <div className="our-services">
-                <div className="service-info">
+                <div className="service-info reveal">
                     <h1>SERVICES</h1>
                     <hr></hr>
                 </div>
             </div>
-            <div className="service-box">
+            <div className="service-box reveal">
                 {Card}
             </div>
         </div>
