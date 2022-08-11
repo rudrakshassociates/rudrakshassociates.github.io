@@ -97,12 +97,13 @@
         width: 80%;
     }
     .Work-Header{
-        background-image: url("/public/Images/header\ banner\ all\ desk.jpg");
+        background-image: url("/public/Images/bannerheader\ all\ tab.jpg");
     
     }
 }
 @media only screen and (max-width:600px){
     .Case-Studies{
+        
         padding: 5%;
         height: 2600px;
     }
@@ -111,6 +112,10 @@
         top: 30%;
         left: 20;
         height: 2500px;
+        margin-top:20%;
+    }
+    .card-case>div{
+        padding: 10% 0%;
     }
     .card-case>div>img{
         width: 100%;

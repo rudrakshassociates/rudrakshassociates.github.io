@@ -51,8 +51,8 @@
 .cont-desc{
     display: inline-block;
     font-size: 1.5rem;
-    width: 60vw;
-    margin-left: 6%;
+    width: 50vw;
+    margin-left: 10%;
     text-align: left;
     font-weight: 400;
 }
@@ -98,5 +98,36 @@
     .dropdown-link>hr{
         width: 15vw;
         font-size: 1.6rem;
+    }
+    .cont-desc{
+        line-height: 0rem;
+    }
+    .dropdown-cont>li{
+        line-height: 0rem;
+    }
+}
+@media only screen and (max-width:600px){
+    .cont-desc{
+        display: none;
+    }
+    .dropdown{
+        position: fixed;
+        width: 90vw;
+        height: 85vh;
+        margin: 5% 0% 
+    }
+    .dropdown-cont{
+        margin-left: -12%;
+    }
+    .dropdown-cont>li{
+        width: 85vw;
+        margin: 15% 5%;
+        text-align: center;
+    }
+    .dropdown-cont>li:active{
+        background-color: #BD2BE2;
+    }
+    .navbar-link{
+        font-size: 3rem;
     }
 }

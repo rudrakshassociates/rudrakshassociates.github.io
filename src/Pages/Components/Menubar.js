@@ -60,9 +60,9 @@ export default function Menubar(props){
             </ul>
             <ul className="dropdown-cont">
                     <li onClick={scrolltoServices}>Services <p className="cont-desc">What we provide to our customers.</p></li>
-                    <li><Link to="/works" className="navbar-link is-active">Our Work</Link> <p className="cont-desc">List of All our projects we have built sofar.</p></li>
+                    <li><Link to="/works" className="navbar-link is-active">Our Work</Link> <p className="cont-desc">Our Approach to development .</p></li>
                     <li><Link to="/contactus" className="navbar-link is-active">Contact</Link><p className="cont-desc">Here you can contact us to collaborate or inform or offer.</p></li>
-                    <li><Link to="/about" className="navbar-link is-active">About Us</Link><p className="cont-desc">What are our motivation and Why you should choose us.</p></li>
+                    <li><Link to="/about" className="navbar-link is-active">About Us</Link><p className="cont-desc">What are our motivation and Our Foundations.</p></li>
             </ul>
 
         </div>
