@@ -81,3 +81,13 @@ html::-moz-scrollbar-thumb{
     z-index: 105;
     background-color:#892be2;
 }
+.Loader-img{
+    width: 10vw;
+    margin: 45%;
+}
+@media only screen and (min-width:1200px){
+    .Loader-img{
+        width: 5%;
+        margin: 20% 47%;
+    }
+}

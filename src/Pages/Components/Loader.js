@@ -8,7 +8,7 @@ export default function Loader(){
             exit={{opacity:1}}
             transition={{duration:1,ease:"easeInOut"}}
         >
-            <img src="rudraksh-loader.gif" style={{width:"10vw",margin:"40%"}}></img>
+            <img src="rudraksh-loader.gif" className="Loader-img"></img>
         </motion.div>
     )
 }
