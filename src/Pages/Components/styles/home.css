@@ -283,11 +283,11 @@
     .Home-bg{
         background-position: bottom;
         width: 100vw;
-        height: 120vh;
+        height: 110vh;
     }
     .Title{
         width: 100vw;
-        margin-top: 30%;
+        margin-top: 40%;
         text-align: center;
 
     }
@@ -302,9 +302,10 @@
     }
     .Title-info{
         text-align: center;
-        margin-top: 20%;
+        margin-top: 25%;
     }
     .Title-info>p{
+        margin-top: 15%;
         font-size: 1rem;
         width: 80vw;
     }
@@ -323,7 +324,28 @@
         padding:20% 5% ;
     }
     .downbutton{
-        display: none;
+        margin-top: 50%;
     }
-    
+    .downbutton:active{
+        color: #E948AD;
+    }
+    .buttons{
+        margin-top: 30%;
+    }
+    .News-Container{
+        height: 90vh;
+    }
+    .News-Container{
+        background:linear-gradient(
+            to bottom,
+            #ffffff 0%,
+            #ffffff 65%,
+            #BD2BE2 65%,
+            #BD2BE2 100%
+        );
+    }
+    .News-Highlight{
+        text-align: left;
+        font-size: 0.9rem;
+    }
 }

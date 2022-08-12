@@ -41,6 +41,9 @@
 .collage-index>h3:hover{
     color:#FB6F77 ;
 }
+.collage-index>h3:active{
+    color: #FB6F6F;
+}
 .collage{
     overflow-y: scroll;   
 }
@@ -88,6 +91,12 @@
         background-color: white;
     }
 }
-@media only screen and (max-width:320px){
-
+@media only screen and (max-width:600px){
+    .collage-index{
+    font-size: 0.7rem;
+    gap: 10%;
+    }
+    .collage-index>h3:active{
+        color: #FB6F6F;
+    }
 }

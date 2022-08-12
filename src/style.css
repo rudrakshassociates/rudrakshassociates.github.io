@@ -91,10 +91,14 @@ html::-moz-scrollbar-thumb{
         margin: 20% 47%;
     }
 }
-@media screen and (min-width:600px){
+@media screen and (max-width:600px){
+    .Loader-img{
+        width: 15%;
+        margin: 85% 45% ;
+    }
     .footer{
         position:sticky;
-        bottom: 0;
+        bottom:0;
         z-index: -1;
     }
 }
