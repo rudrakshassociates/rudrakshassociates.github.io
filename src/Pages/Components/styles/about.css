@@ -256,6 +256,7 @@
     .about-Insights{
         padding-top: 2%;
     }
+    
     .about-Insights-div{
         height: 100vh;
     }
@@ -292,59 +293,85 @@
 }
 @media only screen and (max-width:600px){
     .about-Header>h1{
-        margin:15% 10% 2% ;
+        font-size: 1.5rem;
+        margin: 20% 5% 5%;
+        text-align: center;
     }
     .about-Header>p{
-        margin: 2% 10% 5%;
+        font-size: 0.8rem;
+        text-align: center;
     }
     .our-Story{
-        width: 100%;
+        width: 90vw;
         gap: 10%;
-        margin: 0% 1%;
-        margin-top: 5%;
+        margin: 20% 1%;
+        display: block;
     }
     .our-Story>div{
         width: 100%;
     }
     .our-Story>div>h1{
+        font-size: 1.6rem;
         width: 100%;
     }
     .our-Story>div>p{
-        width: 90%;
-        font-size: 15px;
+        width: 90vw;
+        font-size:0.9rem;
     }
     .Carrer-Image>img{
         padding-top: 50%;
         padding-right: 25%;
     }
-    .Story-Image>img{
-        padding-top: 50%;
+    .Story-Image{
+        margin-top: 20%;
+    }
+    .about-Insights-div{
+        height: 200vh;
     }
     .about-Insights>div{
-        width: 100%;
+        display: block;
+        margin: 5% 1%;
+    }
+    .about-Insights>h3{
+        font-size:1.3rem ;
+    }
+    .about-Insights>h1{
+        font-size:1.6rem ;
     }
     .about-Insights>div>div{
+        width: 90vw;
+        margin-top: 5%;
         padding-bottom: 1%;
     }
     .about-Insights>div>div>p{
-        font-size: 15px;
+        font-size: 1rem;
+    }
+    .about-Insights>div>div>img{
+        width: 90vw;
     }
     .about-Insights>div>div>h2{
-        font-size: 20px;
+        font-size: 1.3rem;
     }
     .about-values{
+        display: block;
         justify-content: center;
     }
     .about-values>div{
-        width: 100%;
-        font-size: 15px;
+        width: 85vw;
+        font-size: 0.9rem;
+        text-align: center;
+        margin: 5% 0%;
     }
     .about-ending{
         height: 300px;
     }
     .end-para>p{
-        letter-spacing: 1px;
-        font-size: 20px;
+        margin-top: 0%;
+        letter-spacing: 0.08rem;
+        font-size: 0.9rem;
     }
-
+    .about-articles>div{
+        gap: 5%;
+        margin: 5% 1%;
+    }
 }
