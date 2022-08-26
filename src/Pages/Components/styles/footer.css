@@ -173,3 +173,24 @@
     }
     
 }
+@media only screen and (max-width:480px){
+    .Footer-Container{
+        width: 100vw;
+    }
+    .Footer-list{
+        width: 100vw;
+    }
+    .Footer-bottom-links{
+        margin-left: -5%;
+        gap: 10%;
+        font-size: 0.6rem;
+    }
+    .Footer-bottom{
+        width: 100vw;
+        margin-left: 0%;
+    }
+    .Footer-list>h2{
+        width: 50vw;
+        font-size: 0.8rem;
+    }
+}

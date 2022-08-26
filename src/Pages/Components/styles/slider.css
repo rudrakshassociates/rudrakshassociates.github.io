@@ -104,3 +104,20 @@
     }
     
 }
+@media only screen and (max-width:600px) {
+    .main-slider-container{
+        margin-left:-5%;
+    }
+    .slider{
+        width: 90vw;
+        height: 50vh;
+    }
+    .slider-icon{
+        width:10vw;
+    }
+    .slider-card{
+        width:75vw;
+        height: 50vh;
+    }
+    
+}
