@@ -17,10 +17,10 @@ export default function Footer(){
                             <ul>
                                 <h3>Our Services</h3>
                                 <hr></hr>
-                                <li>Lorem ipsum</li>
-                                <li>Lorem ipsum</li>
-                                <li>Lorem ipsum</li>
-                                <li>Lorem ipsum</li>
+                                <li>Cable Laying</li>
+                                <li>Lift Operation</li>
+                                <li>A/C Installation</li>
+                                <li>A/V System</li>
                             </ul>
                         </div>
 
@@ -41,7 +41,7 @@ export default function Footer(){
                             <ul>
                                 <h3>Projects</h3>
                                 <hr></hr>
-                                <li>Lorem ipsum</li>
+                                <li>School Building Project</li>
                                 <li>Lorem ipsum</li>
                                 <li>Lorem ipsum</li>
                                 <li>Lorem ipsum</li>
