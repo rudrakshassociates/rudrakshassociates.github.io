@@ -100,3 +100,8 @@
         color: #FB6F6F;
     }
 }
+@media only screen and (max-width:360px){
+    .Gallery-Container{
+        padding: 5%;
+    }
+}

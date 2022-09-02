@@ -123,3 +123,16 @@
     
     }
 }
+@media only screen and (max-width:360px){
+    .Case-Studies{
+        
+        padding: 5%;
+        height: 320vh;
+    }
+    .card-case{
+        margin-top:30%;
+    }
+    .Work-Header{
+        height: 40vh;
+    }
+}
