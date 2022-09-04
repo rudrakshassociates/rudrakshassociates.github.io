@@ -15,18 +15,18 @@ export default function Footer(){
                     <div className="Footer-Links">
                         <div className="Link-block">
                             <ul>
-                                <h3>Our Services</h3>
+                                <h3><Link to="/about" className="foot-subhead">About Us</Link></h3>
                                 <hr></hr>
-                                <li>Cable Laying</li>
-                                <li>Lift Operation</li>
-                                <li>A/C Installation</li>
-                                <li>A/V System</li>
+                                <li>Carrer</li>
+                                <li>Our Story</li>
+                                <li>Articles on Us</li>
+                                <li>Insights of Company</li>
                             </ul>
                         </div>
 
                         <div className="Link-block">
                             <ul>
-                                <h3>About</h3>
+                                <h3><Link to="/" className="foot-subhead">Our Services</Link></h3>
                                 <hr></hr>
                                 <h2>Wanna work with us?</h2>
                                 <div className="contact-button">
@@ -39,7 +39,7 @@ export default function Footer(){
 
                         <div className="Link-block">
                             <ul>
-                                <h3>Projects</h3>
+                                <h3><Link to="/work" className="foot-subhead">Projects</Link></h3>
                                 <hr></hr>
                                 <li>School Building Project</li>
                                 <li>Lorem ipsum</li>
